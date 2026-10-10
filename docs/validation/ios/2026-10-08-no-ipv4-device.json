@@ -1,0 +1,149 @@
+{
+  "echoIPv4" : "100.82.58.195",
+  "finished" : true,
+  "mtu" : 1500,
+  "publicCheck" : true,
+  "resolver" : "",
+  "resolverPort" : 53,
+  "runID" : "BC72FEF5-4BD1-48C7-AFEC-BA70C42530CD",
+  "steps" : [
+    {
+      "name" : "ipv4-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达 AF_INET UDP scoped=false 100.82.58.195 echo matched"
+    },
+    {
+      "name" : "ipv4-tcp-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达 AF_INET TCP scoped=false 100.82.58.195 echo matched"
+    },
+    {
+      "name" : "ipv4-scoped-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达 AF_INET UDP scoped=true 100.82.58.195 echo matched"
+    },
+    {
+      "name" : "https-dualstack-positive-control",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-1-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-1-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-1-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-1-https-ipv4",
+      "result" : "PASS：HTTPS ipv4.icanhazip.com HTTP 200，15 字节"
+    },
+    {
+      "name" : "round-1-https-dualstack",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-1-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET UDP scoped=false 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-1-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET UDP scoped=true 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-1-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET TCP scoped=false 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-1-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 13,\n  \"dnsSource\" : \"physical\",\n  \"events\" : [\n    \"DNS 09B7C7FA synthesized rr=1\\\/9 owner=p214-contacts.icloud.com.cn type=5 ttl=58 alias=contacts.fe.apple-dns.cn\",\n    \"DNS 09B7C7FA synthesized rr=2\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c07c embeddedIPv4=222.73.192.124\",\n    \"DNS 09B7C7FA synthesized rr=3\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c06c embeddedIPv4=222.73.192.108\",\n    \"DNS 09B7C7FA synthesized rr=4\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c078 embeddedIPv4=222.73.192.120\",\n    \"DNS 09B7C7FA synthesized rr=5\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0ec embeddedIPv4=222.73.192.236\",\n    \"DNS 09B7C7FA synthesized rr=6\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f0 embeddedIPv4=222.73.192.240\",\n    \"DNS 09B7C7FA synthesized rr=7\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0fc embeddedIPv4=222.73.192.252\",\n    \"DNS 09B7C7FA synthesized rr=8\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f4 embeddedIPv4=222.73.192.244\",\n    \"DNS 09B7C7FA synthesized rr=9\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c070 embeddedIPv4=222.73.192.112\",\n    \"DNS 09B7C7FA downstream id=12580 name=p214-contacts.icloud.com.cn qtype=28 mode=synthesized-AAAA transport=TCP rcode=0 tc=false answers=9 bytes=526 originalBytes=526 udpLimit=512\",\n    \"DNS 09B7C7FA downstream rr=1\\\/9 owner=p214-contacts.icloud.com.cn type=5 ttl=58 alias=contacts.fe.apple-dns.cn\",\n    \"DNS 09B7C7FA downstream rr=2\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c07c embeddedIPv4=222.73.192.124\",\n    \"DNS 09B7C7FA downstream rr=3\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c06c embeddedIPv4=222.73.192.108\",\n    \"DNS 09B7C7FA downstream rr=4\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c078 embeddedIPv4=222.73.192.120\",\n    \"DNS 09B7C7FA downstream rr=5\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0ec embeddedIPv4=222.73.192.236\",\n    \"DNS 09B7C7FA downstream rr=6\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f0 embeddedIPv4=222.73.192.240\",\n    \"DNS 09B7C7FA downstream rr=7\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0fc embeddedIPv4=222.73.192.252\",\n    \"DNS 09B7C7FA downstream rr=8\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f4 embeddedIPv4=222.73.192.244\",\n    \"DNS 09B7C7FA downstream rr=9\\\/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c070 embeddedIPv4=222.73.192.112\",\n    \"TCP flow=2 closed txBytes=0 rxBytes=0\",\n    \"UDP flow=1 open fd64:64:64:1::2:62296>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=1 first-send bytes=44\",\n    \"UDP flow=1 first-receive bytes=44\",\n    \"DNS 4507DFDD client id=35643 name=api.smoot.apple.cn type=65 transport=UDP\",\n    \"DNS 4507DFDD upstream query purpose=client id=35643 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=65\",\n    \"DNS A00B6B64 client id=13188 name=api.smoot.apple.cn type=28 transport=UDP\",\n    \"DNS A00B6B64 upstream query purpose=client id=13188 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=28\",\n    \"DNS 4507DFDD upstream purpose=client id=35643 10.1.5.1:53 name=api.smoot.apple.cn type=65 rcode=0 answers=0\",\n    \"DNS 4507DFDD downstream id=35643 name=api.smoot.apple.cn qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512\",\n    \"DNS A00B6B64 upstream purpose=client id=13188 10.1.5.1:53 name=api.smoot.apple.cn type=28 rcode=0 answers=0\",\n    \"DNS A00B6B64 AAAA fallback to A\",\n    \"DNS A00B6B64 upstream query purpose=dns64-A id=57897 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=1\",\n    \"DNS A00B6B64 upstream purpose=dns64-A id=57897 10.1.5.1:53 name=api.smoot.apple.cn type=1 rcode=0 answers=0\",\n    \"DNS A00B6B64 downstream id=13188 name=api.smoot.apple.cn qtype=28 mode=error transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512\",\n    \"UDP flow=2 open fd64:64:64:1::2:54322>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=2 first-send bytes=1452\",\n    \"UDP flow=2 first-receive bytes=1452\",\n    \"UDP flow=3 open fd64:64:64:1::2:52089>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=3 first-send bytes=46\",\n    \"UDP flow=3 first-receive bytes=46\",\n    \"UDP flow=4 open fd64:64:64:1::2:56809>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=4 first-send bytes=44\",\n    \"UDP flow=4 first-receive bytes=44\",\n    \"TCP flow=3 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=3 connected\",\n    \"TCP flow=3 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=3 closed txBytes=32768 rxBytes=32768\",\n    \"DNS E97F1017 client id=50725 name=ipv4.icanhazip.com type=65 transport=UDP\",\n    \"DNS E97F1017 upstream query purpose=client id=50725 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=65\",\n    \"DNS EBBF5FC1 client id=31033 name=ipv4.icanhazip.com type=28 transport=UDP\",\n    \"DNS EBBF5FC1 upstream query purpose=client id=31033 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=28\",\n    \"DNS E97F1017 upstream purpose=client id=50725 10.1.5.1:53 name=ipv4.icanhazip.com type=65 rcode=0 answers=1\",\n    \"DNS E97F1017 upstream purpose=client rr=1\\\/1 owner=ipv4.icanhazip.com type=65 ttl=33 rdataBytes=25\",\n    \"DNS E97F1017 downstream id=50725 name=ipv4.icanhazip.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=73 originalBytes=73 udpLimit=512\",\n    \"DNS E97F1017 downstream rr=1\\\/1 owner=ipv4.icanhazip.com type=65 ttl=33 rdataBytes=25\",\n    \"DNS EBBF5FC1 upstream purpose=client id=31033 10.1.5.1:53 name=ipv4.icanhazip.com type=28 rcode=0 answers=0\",\n    \"DNS EBBF5FC1 AAAA fallback to A\",\n    \"DNS EBBF5FC1 upstream query purpose=dns64-A id=65169 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=1\",\n    \"DNS EBBF5FC1 upstream purpose=dns64-A id=65169 10.1.5.1:53 name=ipv4.icanhazip.com type=1 rcode=0 answers=2\",\n    \"DNS EBBF5FC1 upstream purpose=dns64-A rr=1\\\/2 owner=ipv4.icanhazip.com type=1 ttl=235 address=104.16.184.241\",\n    \"DNS EBBF5FC1 upstream purpose=dns64-A rr=2\\\/2 owner=ipv4.icanhazip.com type=1 ttl=235 address=104.16.185.241\",\n    \"DNS EBBF5FC1 synthesized rr=1\\\/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241\",\n    \"DNS EBBF5FC1 synthesized rr=2\\\/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241\",\n    \"DNS EBBF5FC1 downstream id=31033 name=ipv4.icanhazip.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=2 bytes=128 originalBytes=128 udpLimit=512\",\n    \"DNS EBBF5FC1 downstream rr=1\\\/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241\",\n    \"DNS EBBF5FC1 downstream rr=2\\\/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241\",\n    \"UDP flow=5 open fd64:64:64:1::2:52749>fd64:64:64::6810:b8f1:443 -> 104.16.184.241\",\n    \"UDP flow=5 first-send bytes=1200\",\n    \"UDP flow=5 first-receive bytes=1200\",\n    \"IPv6 rejected nextHeader=0 bytes=76 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"IPv6 rejected nextHeader=58 bytes=603 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"DNS 6C365974 client id=374 name=example.com type=65 transport=UDP\",\n    \"DNS 6C365974 upstream query purpose=client id=374 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=65\",\n    \"DNS 5035FEEE client id=35992 name=example.com type=28 transport=UDP\",\n    \"DNS 5035FEEE upstream query purpose=client id=35992 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=28\",\n    \"DNS 6C365974 upstream purpose=client id=374 10.1.5.1:53 name=example.com type=65 rcode=0 answers=1\",\n    \"DNS 6C365974 upstream purpose=client rr=1\\\/1 owner=example.com type=65 ttl=212 rdataBytes=61\",\n    \"DNS 6C365974 downstream id=374 name=example.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=102 originalBytes=102 udpLimit=512\",\n    \"DNS 6C365974 downstream rr=1\\\/1 owner=example.com type=65 ttl=212 rdataBytes=61\",\n    \"DNS 5035FEEE upstream purpose=client id=35992 10.1.5.1:53 name=example.com type=28 rcode=0 answers=2\",\n    \"DNS 5035FEEE upstream purpose=client rr=1\\\/2 owner=example.com type=28 ttl=306 address=2606:4700:10::ac42:93f3\",\n    \"DNS 5035FEEE upstream purpose=client rr=2\\\/2 owner=example.com type=28 ttl=306 address=2606:4700:10::6814:179a\",\n    \"DNS 5035FEEE downstream id=35992 name=example.com qtype=28 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=2 bytes=85 originalBytes=85 udpLimit=512\",\n    \"DNS 5035FEEE downstream rr=1\\\/2 owner=example.com type=28 ttl=306 address=2606:4700:10::ac42:93f3\",\n    \"DNS 5035FEEE downstream rr=2\\\/2 owner=example.com type=28 ttl=306 address=2606:4700:10::6814:179a\",\n    \"UDP flow=6 open fd64:64:64:1::2:56060>2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3\",\n    \"UDP flow=6 first-send bytes=1200\",\n    \"UDP flow=7 open fd64:64:64:1::2:53566>2606:4700:10::6814:179a:443 -> 2606:4700:10::6814:179a\",\n    \"UDP flow=7 first-send bytes=1200\",\n    \"TCP flow=4 2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3\",\n    \"UDP flow=6 first-receive bytes=1200\",\n    \"UDP flow=7 first-receive bytes=1200\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1196 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"TCP flow=4 connected\",\n    \"IPv6 rejected nextHeader=58 bytes=119 src=fd64:64:64:1::2 dst=2606:4700:10::ac42:93f3\",\n    \"TCP flow=4 closed txBytes=517 rxBytes=4572\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 0,\n  \"mtu\" : 1500,\n  \"packets\" : 122,\n  \"physicalDNS\" : [\n    \"10.1.5.1\"\n  ],\n  \"rejected\" : 9,\n  \"resolver\" : \"10.1.5.1\",\n  \"resolverPort\" : 53,\n  \"running\" : true,\n  \"rxBytes\" : 57327,\n  \"tcpFlows\" : 0,\n  \"tunnelIPv4Configured\" : false,\n  \"txBytes\" : 43592,\n  \"udpFlows\" : 7,\n  \"udpReplies\" : 37\n}"
+    },
+    {
+      "name" : "round-1-stop",
+      "result" : "PASS：VPN disconnected"
+    },
+    {
+      "name" : "round-2-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-2-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-2-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-2-https-ipv4",
+      "result" : "PASS：HTTPS ipv4.icanhazip.com HTTP 200，15 字节"
+    },
+    {
+      "name" : "round-2-https-dualstack",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-2-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET UDP scoped=false 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-2-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET UDP scoped=true 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-2-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线） AF_INET TCP scoped=false 100.82.58.195 connect errno=51"
+    },
+    {
+      "name" : "round-2-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 10,\n  \"dnsSource\" : \"physical\",\n  \"events\" : [\n    \"DNS D598CDB9 AAAA fallback to A\",\n    \"DNS D598CDB9 upstream query purpose=dns64-A id=17980 10.1.5.1:53 transport=UDP family=IPv4 name=gateway.icloud.com type=1\",\n    \"DNS D598CDB9 upstream purpose=dns64-A id=17980 10.1.5.1:53 name=gateway.icloud.com type=1 rcode=0 answers=7\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=1\\\/7 owner=gateway.icloud.com type=5 ttl=10019 alias=gateway.fe2.apple-dns.net\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=2\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.66\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=3\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.69\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=4\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.68\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=5\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.28\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=6\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.64\",\n    \"DNS D598CDB9 upstream purpose=dns64-A rr=7\\\/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.20\",\n    \"DNS D598CDB9 synthesized rr=1\\\/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net\",\n    \"DNS D598CDB9 synthesized rr=2\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66\",\n    \"DNS D598CDB9 synthesized rr=3\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69\",\n    \"DNS D598CDB9 synthesized rr=4\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68\",\n    \"DNS D598CDB9 synthesized rr=5\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28\",\n    \"DNS D598CDB9 synthesized rr=6\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64\",\n    \"DNS D598CDB9 synthesized rr=7\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20\",\n    \"DNS D598CDB9 downstream id=44915 name=gateway.icloud.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=7 bytes=411 originalBytes=411 udpLimit=512\",\n    \"DNS D598CDB9 downstream rr=1\\\/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net\",\n    \"DNS D598CDB9 downstream rr=2\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66\",\n    \"DNS D598CDB9 downstream rr=3\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69\",\n    \"DNS D598CDB9 downstream rr=4\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68\",\n    \"DNS D598CDB9 downstream rr=5\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28\",\n    \"DNS D598CDB9 downstream rr=6\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64\",\n    \"DNS D598CDB9 downstream rr=7\\\/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20\",\n    \"DNS C78375B0 upstream purpose=client id=39554 10.1.5.1:53 name=_dns.resolver.arpa type=64 rcode=4 answers=0\",\n    \"DNS C78375B0 downstream id=39554 name=_dns.resolver.arpa qtype=64 mode=upstream-passthrough transport=UDP rcode=4 tc=false answers=0 bytes=36 originalBytes=36 udpLimit=512\",\n    \"DNS 2781ED14 client id=45826 name=api.smoot.apple.cn type=65 transport=UDP\",\n    \"DNS 2781ED14 upstream query purpose=client id=45826 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=65\",\n    \"DNS CB7ADBD1 client id=14281 name=api.smoot.apple.cn type=28 transport=UDP\",\n    \"DNS CB7ADBD1 upstream query purpose=client id=14281 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=28\",\n    \"DNS 2781ED14 upstream purpose=client id=45826 10.1.5.1:53 name=api.smoot.apple.cn type=65 rcode=0 answers=0\",\n    \"DNS 2781ED14 downstream id=45826 name=api.smoot.apple.cn qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512\",\n    \"DNS CB7ADBD1 upstream purpose=client id=14281 10.1.5.1:53 name=api.smoot.apple.cn type=28 rcode=0 answers=0\",\n    \"DNS CB7ADBD1 AAAA fallback to A\",\n    \"DNS CB7ADBD1 upstream query purpose=dns64-A id=39592 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=1\",\n    \"DNS CB7ADBD1 upstream purpose=dns64-A id=39592 10.1.5.1:53 name=api.smoot.apple.cn type=1 rcode=0 answers=0\",\n    \"DNS CB7ADBD1 downstream id=14281 name=api.smoot.apple.cn qtype=28 mode=error transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512\",\n    \"TCP flow=1 DNS\",\n    \"TCP flow=1 closed txBytes=0 rxBytes=0\",\n    \"UDP flow=1 open fd64:64:64:1::2:60329>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=1 first-send bytes=44\",\n    \"UDP flow=1 first-receive bytes=44\",\n    \"UDP flow=2 open fd64:64:64:1::2:63118>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=2 first-send bytes=1452\",\n    \"UDP flow=2 first-receive bytes=1452\",\n    \"UDP flow=3 open fd64:64:64:1::2:63817>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=3 first-send bytes=46\",\n    \"UDP flow=3 first-receive bytes=46\",\n    \"IPv6 rejected nextHeader=0 bytes=96 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"UDP flow=4 open fd64:64:64:1::2:61140>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=4 first-send bytes=44\",\n    \"UDP flow=4 first-receive bytes=44\",\n    \"TCP flow=2 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=2 connected\",\n    \"TCP flow=2 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=2 closed txBytes=32768 rxBytes=32768\",\n    \"DNS 73967A0B client id=10105 name=ipv4.icanhazip.com type=65 transport=UDP\",\n    \"DNS 73967A0B upstream query purpose=client id=10105 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=65\",\n    \"DNS 6F978A08 client id=6061 name=ipv4.icanhazip.com type=28 transport=UDP\",\n    \"DNS 6F978A08 upstream query purpose=client id=6061 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=28\",\n    \"DNS 73967A0B upstream purpose=client id=10105 10.1.5.1:53 name=ipv4.icanhazip.com type=65 rcode=0 answers=1\",\n    \"DNS 73967A0B upstream purpose=client rr=1\\\/1 owner=ipv4.icanhazip.com type=65 ttl=436 rdataBytes=25\",\n    \"DNS 73967A0B downstream id=10105 name=ipv4.icanhazip.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=73 originalBytes=73 udpLimit=512\",\n    \"DNS 73967A0B downstream rr=1\\\/1 owner=ipv4.icanhazip.com type=65 ttl=436 rdataBytes=25\",\n    \"DNS 6F978A08 upstream purpose=client id=6061 10.1.5.1:53 name=ipv4.icanhazip.com type=28 rcode=0 answers=0\",\n    \"DNS 6F978A08 AAAA fallback to A\",\n    \"DNS 6F978A08 upstream query purpose=dns64-A id=17715 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=1\",\n    \"DNS 6F978A08 upstream purpose=dns64-A id=17715 10.1.5.1:53 name=ipv4.icanhazip.com type=1 rcode=0 answers=2\",\n    \"DNS 6F978A08 upstream purpose=dns64-A rr=1\\\/2 owner=ipv4.icanhazip.com type=1 ttl=229 address=104.16.184.241\",\n    \"DNS 6F978A08 upstream purpose=dns64-A rr=2\\\/2 owner=ipv4.icanhazip.com type=1 ttl=229 address=104.16.185.241\",\n    \"DNS 6F978A08 synthesized rr=1\\\/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241\",\n    \"DNS 6F978A08 synthesized rr=2\\\/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241\",\n    \"DNS 6F978A08 downstream id=6061 name=ipv4.icanhazip.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=2 bytes=128 originalBytes=128 udpLimit=512\",\n    \"DNS 6F978A08 downstream rr=1\\\/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241\",\n    \"DNS 6F978A08 downstream rr=2\\\/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241\",\n    \"UDP flow=5 open fd64:64:64:1::2:55713>fd64:64:64::6810:b8f1:443 -> 104.16.184.241\",\n    \"UDP flow=5 first-send bytes=1200\",\n    \"UDP flow=5 first-receive bytes=1200\",\n    \"IPv6 rejected nextHeader=0 bytes=76 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"IPv6 rejected nextHeader=58 bytes=119 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"IPv6 rejected nextHeader=58 bytes=151 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"DNS 8C822A5A client id=2701 name=example.com type=65 transport=UDP\",\n    \"DNS 8C822A5A upstream query purpose=client id=2701 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=65\",\n    \"DNS 4E5ECD59 client id=1269 name=example.com type=28 transport=UDP\",\n    \"DNS 4E5ECD59 upstream query purpose=client id=1269 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=28\",\n    \"DNS 4E5ECD59 upstream purpose=client id=1269 10.1.5.1:53 name=example.com type=28 rcode=0 answers=2\",\n    \"DNS 4E5ECD59 upstream purpose=client rr=1\\\/2 owner=example.com type=28 ttl=492 address=2606:4700:10::6814:179a\",\n    \"DNS 4E5ECD59 upstream purpose=client rr=2\\\/2 owner=example.com type=28 ttl=492 address=2606:4700:10::ac42:93f3\",\n    \"DNS 4E5ECD59 downstream id=1269 name=example.com qtype=28 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=2 bytes=85 originalBytes=85 udpLimit=512\",\n    \"DNS 4E5ECD59 downstream rr=1\\\/2 owner=example.com type=28 ttl=492 address=2606:4700:10::6814:179a\",\n    \"DNS 4E5ECD59 downstream rr=2\\\/2 owner=example.com type=28 ttl=492 address=2606:4700:10::ac42:93f3\",\n    \"DNS 8C822A5A upstream purpose=client id=2701 10.1.5.1:53 name=example.com type=65 rcode=0 answers=1\",\n    \"DNS 8C822A5A upstream purpose=client rr=1\\\/1 owner=example.com type=65 ttl=431 rdataBytes=61\",\n    \"DNS 8C822A5A downstream id=2701 name=example.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=102 originalBytes=102 udpLimit=512\",\n    \"DNS 8C822A5A downstream rr=1\\\/1 owner=example.com type=65 ttl=431 rdataBytes=61\",\n    \"UDP flow=6 open fd64:64:64:1::2:49220>2606:4700:10::6814:179a:443 -> 2606:4700:10::6814:179a\",\n    \"UDP flow=6 first-send bytes=1200\",\n    \"UDP flow=6 first-receive bytes=1200\",\n    \"IPv6 rejected nextHeader=58 bytes=119 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 0,\n  \"mtu\" : 1500,\n  \"packets\" : 102,\n  \"physicalDNS\" : [\n    \"10.1.5.1\"\n  ],\n  \"rejected\" : 6,\n  \"resolver\" : \"10.1.5.1\",\n  \"resolverPort\" : 53,\n  \"running\" : true,\n  \"rxBytes\" : 46880,\n  \"tcpFlows\" : 0,\n  \"tunnelIPv4Configured\" : false,\n  \"txBytes\" : 42969,\n  \"udpFlows\" : 6,\n  \"udpReplies\" : 33\n}"
+    },
+    {
+      "name" : "round-2-stop",
+      "result" : "PASS：VPN disconnected"
+    }
+  ],
+  "timestamp" : "2026-10-08T13:07:34Z",
+  "vpnStatus" : "VPN 未连接"
+}

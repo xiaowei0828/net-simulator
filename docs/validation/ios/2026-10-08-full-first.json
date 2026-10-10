@@ -1,0 +1,110 @@
+{
+  "echoIPv4" : "100.82.58.195",
+  "finished" : true,
+  "mtu" : 1500,
+  "runID" : "0C4E6408-A798-4003-9D93-E32A7D9B78A1",
+  "steps" : [
+    {
+      "name" : "ipv4-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达"
+    },
+    {
+      "name" : "round-1-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-1-dns-fixture",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-dns-tcp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-udp-44",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-udp-1452",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-system-dns-udp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-tcp-32k",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-upstream-dns-tcp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-1-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 0,\n  \"events\" : [\n    \"started mtu=1500 fullTunnel=true resolver=100.82.58.195:1053\",\n    \"IPv4 captured and dropped\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 14,\n  \"mtu\" : 1500,\n  \"packets\" : 18,\n  \"rejected\" : 4,\n  \"running\" : true,\n  \"rxBytes\" : 0,\n  \"tcpFlows\" : 0,\n  \"txBytes\" : 0,\n  \"udpFlows\" : 0,\n  \"udpReplies\" : 0\n}"
+    },
+    {
+      "name" : "round-1-stop",
+      "result" : "PASS：VPN disconnected"
+    },
+    {
+      "name" : "round-2-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-2-dns-fixture",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-dns-tcp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-udp-44",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-udp-1452",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-system-dns-udp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-tcp-32k",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-upstream-dns-tcp",
+      "result" : "FAIL：5 秒未收到响应"
+    },
+    {
+      "name" : "round-2-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 0,\n  \"events\" : [\n    \"started mtu=1500 fullTunnel=true resolver=100.82.58.195:1053\",\n    \"IPv4 captured and dropped\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 10,\n  \"mtu\" : 1500,\n  \"packets\" : 12,\n  \"rejected\" : 2,\n  \"running\" : true,\n  \"rxBytes\" : 0,\n  \"tcpFlows\" : 0,\n  \"txBytes\" : 0,\n  \"udpFlows\" : 0,\n  \"udpReplies\" : 0\n}"
+    },
+    {
+      "name" : "round-2-stop",
+      "result" : "PASS：VPN disconnected"
+    }
+  ],
+  "timestamp" : "2026-10-08T03:45:42Z",
+  "vpnStatus" : "探针未连接"
+}

@@ -1,0 +1,340 @@
+Oct  8 21:07:21.381887 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS selection source=physical candidates=10.1.5.1 selected=10.1.5.1:53
+Oct  8 21:07:21.720813 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: started mtu=1500 tunnelIPv4=none fullTunnel=true resolver=10.1.5.1:53 dnsSource=physical family=IPv4
+Oct  8 21:07:21.959686 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=1 DNS
+Oct  8 21:07:21.960230 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=1 closed txBytes=0 rxBytes=0
+Oct  8 21:07:21.970292 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A client id=4612 name=calendars.icloud.com type=28 transport=UDP
+Oct  8 21:07:21.970574 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream query purpose=client id=4612 10.1.5.1:53 transport=UDP family=IPv4 name=calendars.icloud.com type=28
+Oct  8 21:07:21.970767 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS C3157BFC client id=26789 name=_dns.resolver.arpa type=64 transport=UDP
+Oct  8 21:07:21.970861 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS C3157BFC upstream query purpose=client id=26789 10.1.5.1:53 transport=UDP family=IPv4 name=_dns.resolver.arpa type=64
+Oct  8 21:07:21.971060 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 client id=53488 name=p214-caldav.icloud.com.cn type=28 transport=UDP
+Oct  8 21:07:21.971262 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream query purpose=client id=53488 10.1.5.1:53 transport=UDP family=IPv4 name=p214-caldav.icloud.com.cn type=28
+Oct  8 21:07:21.973325 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB client id=12580 name=p214-contacts.icloud.com.cn type=28 transport=UDP
+Oct  8 21:07:21.973648 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream query purpose=client id=12580 10.1.5.1:53 transport=UDP family=IPv4 name=p214-contacts.icloud.com.cn type=28
+Oct  8 21:07:21.989810 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=client id=4612 10.1.5.1:53 name=calendars.icloud.com type=28 rcode=5 answers=0
+Oct  8 21:07:21.989855 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A AAAA fallback to A
+Oct  8 21:07:21.989965 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream query purpose=dns64-A id=29221 10.1.5.1:53 transport=UDP family=IPv4 name=calendars.icloud.com type=1
+Oct  8 21:07:21.990012 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=client id=53488 10.1.5.1:53 name=p214-caldav.icloud.com.cn type=28 rcode=0 answers=1
+Oct  8 21:07:21.990054 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=client rr=1/1 owner=p214-caldav.icloud.com.cn type=5 ttl=580 alias=caldav.fe.apple-dns.cn
+Oct  8 21:07:21.990104 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 AAAA fallback to A
+Oct  8 21:07:21.990529 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream query purpose=dns64-A id=17374 10.1.5.1:53 transport=UDP family=IPv4 name=p214-caldav.icloud.com.cn type=1
+Oct  8 21:07:21.999292 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A id=29221 10.1.5.1:53 name=calendars.icloud.com type=1 rcode=0 answers=7
+Oct  8 21:07:21.999397 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=1/7 owner=calendars.icloud.com type=5 ttl=49 alias=calendars.fe2.apple-dns.net
+Oct  8 21:07:21.999437 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=2/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.68
+Oct  8 21:07:21.999479 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=3/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.20
+Oct  8 21:07:21.999568 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=4/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.42
+Oct  8 21:07:21.999607 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=5/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.28
+Oct  8 21:07:21.999647 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=6/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.66
+Oct  8 21:07:21.999686 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A upstream purpose=dns64-A rr=7/7 owner=calendars.fe2.apple-dns.net type=1 ttl=56 address=17.248.216.64
+Oct  8 21:07:22.000143 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=1/7 owner=calendars.icloud.com type=5 ttl=49 alias=calendars.fe2.apple-dns.net
+Oct  8 21:07:22.000186 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=2/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:22.000228 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=3/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:22.000268 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=4/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d82a embeddedIPv4=17.248.216.42
+Oct  8 21:07:22.000310 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=5/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:22.000360 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=6/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:22.000401 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A synthesized rr=7/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:22.000442 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream id=4612 name=calendars.icloud.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=7 bytes=429 originalBytes=429 udpLimit=512
+Oct  8 21:07:22.000490 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=1/7 owner=calendars.icloud.com type=5 ttl=49 alias=calendars.fe2.apple-dns.net
+Oct  8 21:07:22.000531 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=2/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:22.000573 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=3/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:22.000630 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=4/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d82a embeddedIPv4=17.248.216.42
+Oct  8 21:07:22.000670 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=5/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:22.000788 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=6/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:22.000839 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS ED3D450A downstream rr=7/7 owner=calendars.fe2.apple-dns.net type=28 ttl=49 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:22.000942 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS C3157BFC upstream purpose=client id=26789 10.1.5.1:53 name=_dns.resolver.arpa type=64 rcode=4 answers=0
+Oct  8 21:07:22.001119 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS C3157BFC downstream id=26789 name=_dns.resolver.arpa qtype=64 mode=upstream-passthrough transport=UDP rcode=4 tc=false answers=0 bytes=36 originalBytes=36 udpLimit=512
+Oct  8 21:07:22.010762 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A id=17374 10.1.5.1:53 name=p214-caldav.icloud.com.cn type=1 rcode=0 answers=9
+Oct  8 21:07:22.010815 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=1/9 owner=p214-caldav.icloud.com.cn type=5 ttl=111 alias=caldav.fe.apple-dns.cn
+Oct  8 21:07:22.010917 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=2/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.248
+Oct  8 21:07:22.011337 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=3/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.112
+Oct  8 21:07:22.011377 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=4/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.122
+Oct  8 21:07:22.011416 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=5/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.236
+Oct  8 21:07:22.011537 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=6/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.240
+Oct  8 21:07:22.011643 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=7/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.244
+Oct  8 21:07:22.011701 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=8/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.116
+Oct  8 21:07:22.011759 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 upstream purpose=dns64-A rr=9/9 owner=caldav.fe.apple-dns.cn type=1 ttl=111 address=112.65.66.108
+Oct  8 21:07:22.012992 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=1/9 owner=p214-caldav.icloud.com.cn type=5 ttl=111 alias=caldav.fe.apple-dns.cn
+Oct  8 21:07:22.013229 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=2/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f8 embeddedIPv4=112.65.66.248
+Oct  8 21:07:22.013282 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=3/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:4270 embeddedIPv4=112.65.66.112
+Oct  8 21:07:22.013370 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=4/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:427a embeddedIPv4=112.65.66.122
+Oct  8 21:07:22.013457 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=5/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42ec embeddedIPv4=112.65.66.236
+Oct  8 21:07:22.013648 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=6/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f0 embeddedIPv4=112.65.66.240
+Oct  8 21:07:22.013744 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=7/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f4 embeddedIPv4=112.65.66.244
+Oct  8 21:07:22.014029 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=8/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:4274 embeddedIPv4=112.65.66.116
+Oct  8 21:07:22.014153 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 synthesized rr=9/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:426c embeddedIPv4=112.65.66.108
+Oct  8 21:07:22.014549 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream id=53488 name=p214-caldav.icloud.com.cn qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=9 bytes=504 originalBytes=504 udpLimit=512
+Oct  8 21:07:22.014609 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=1/9 owner=p214-caldav.icloud.com.cn type=5 ttl=111 alias=caldav.fe.apple-dns.cn
+Oct  8 21:07:22.014733 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=2/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f8 embeddedIPv4=112.65.66.248
+Oct  8 21:07:22.014825 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=3/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:4270 embeddedIPv4=112.65.66.112
+Oct  8 21:07:22.014918 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=4/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:427a embeddedIPv4=112.65.66.122
+Oct  8 21:07:22.015026 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=5/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42ec embeddedIPv4=112.65.66.236
+Oct  8 21:07:22.015134 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=6/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f0 embeddedIPv4=112.65.66.240
+Oct  8 21:07:22.015242 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=7/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:42f4 embeddedIPv4=112.65.66.244
+Oct  8 21:07:22.015357 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=8/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:4274 embeddedIPv4=112.65.66.116
+Oct  8 21:07:22.015463 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E3F950C7 downstream rr=9/9 owner=caldav.fe.apple-dns.cn type=28 ttl=111 address=fd64:64:64::7041:426c embeddedIPv4=112.65.66.108
+Oct  8 21:07:22.028799 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 client id=32078 name=gateway.icloud.com type=28 transport=UDP
+Oct  8 21:07:22.029566 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream query purpose=client id=32078 10.1.5.1:53 transport=UDP family=IPv4 name=gateway.icloud.com type=28
+Oct  8 21:07:22.036178 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=client id=12580 10.1.5.1:53 name=p214-contacts.icloud.com.cn type=28 rcode=0 answers=1
+Oct  8 21:07:22.036222 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=client rr=1/1 owner=p214-contacts.icloud.com.cn type=5 ttl=600 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.036547 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB AAAA fallback to A
+Oct  8 21:07:22.036803 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream query purpose=dns64-A id=14907 10.1.5.1:53 transport=UDP family=IPv4 name=p214-contacts.icloud.com.cn type=1
+Oct  8 21:07:22.079294 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=client id=32078 10.1.5.1:53 name=gateway.icloud.com type=28 rcode=5 answers=0
+Oct  8 21:07:22.079575 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 AAAA fallback to A
+Oct  8 21:07:22.080120 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream query purpose=dns64-A id=23485 10.1.5.1:53 transport=UDP family=IPv4 name=gateway.icloud.com type=1
+Oct  8 21:07:22.095427 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A id=23485 10.1.5.1:53 name=gateway.icloud.com type=1 rcode=0 answers=7
+Oct  8 21:07:22.095526 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=1/7 owner=gateway.icloud.com type=5 ttl=10025 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:22.095644 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=2/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.66
+Oct  8 21:07:22.095711 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=3/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.69
+Oct  8 21:07:22.095811 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=4/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.68
+Oct  8 21:07:22.095873 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=5/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.28
+Oct  8 21:07:22.095979 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=6/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.64
+Oct  8 21:07:22.096027 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 upstream purpose=dns64-A rr=7/7 owner=gateway.fe2.apple-dns.net type=1 ttl=25 address=17.248.216.20
+Oct  8 21:07:22.096709 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=1/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:22.096765 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=2/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:22.096806 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=3/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69
+Oct  8 21:07:22.096866 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=4/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:22.097105 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=5/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:22.097213 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=6/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:22.097303 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 synthesized rr=7/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:22.097736 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream id=32078 name=gateway.icloud.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=7 bytes=411 originalBytes=411 udpLimit=512
+Oct  8 21:07:22.097793 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=1/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:22.097833 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=2/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:22.097876 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=3/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69
+Oct  8 21:07:22.098012 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=4/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:22.098098 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=5/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:22.098140 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=6/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:22.098183 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 3E6CCB43 downstream rr=7/7 owner=gateway.fe2.apple-dns.net type=28 ttl=25 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:22.102244 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A id=14907 10.1.5.1:53 name=p214-contacts.icloud.com.cn type=1 rcode=0 answers=9
+Oct  8 21:07:22.102373 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=1/9 owner=p214-contacts.icloud.com.cn type=5 ttl=195 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.102416 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=2/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.244
+Oct  8 21:07:22.102457 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=3/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.248
+Oct  8 21:07:22.102541 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=4/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.122
+Oct  8 21:07:22.102673 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=5/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.236
+Oct  8 21:07:22.102730 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=6/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.116
+Oct  8 21:07:22.102771 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=7/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.108
+Oct  8 21:07:22.102813 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=8/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.112
+Oct  8 21:07:22.102855 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB upstream purpose=dns64-A rr=9/9 owner=contacts.fe.apple-dns.cn type=1 ttl=195 address=112.65.66.240
+Oct  8 21:07:22.103311 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=1/9 owner=p214-contacts.icloud.com.cn type=5 ttl=195 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.103377 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=2/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:42f4 embeddedIPv4=112.65.66.244
+Oct  8 21:07:22.103438 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=3/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:42f8 embeddedIPv4=112.65.66.248
+Oct  8 21:07:22.103494 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=4/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:427a embeddedIPv4=112.65.66.122
+Oct  8 21:07:22.103911 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=5/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:42ec embeddedIPv4=112.65.66.236
+Oct  8 21:07:22.104064 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=6/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:4274 embeddedIPv4=112.65.66.116
+Oct  8 21:07:22.104170 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=7/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:426c embeddedIPv4=112.65.66.108
+Oct  8 21:07:22.104585 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=8/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:4270 embeddedIPv4=112.65.66.112
+Oct  8 21:07:22.104687 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB synthesized rr=9/9 owner=contacts.fe.apple-dns.cn type=28 ttl=195 address=fd64:64:64::7041:42f0 embeddedIPv4=112.65.66.240
+Oct  8 21:07:22.104729 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6CB68FDB downstream id=12580 name=p214-contacts.icloud.com.cn qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=true answers=0 bytes=45 originalBytes=526 udpLimit=512
+Oct  8 21:07:22.111625 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=2 DNS
+Oct  8 21:07:22.114191 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA client id=12580 name=p214-contacts.icloud.com.cn type=28 transport=TCP
+Oct  8 21:07:22.114428 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream query purpose=client id=12580 10.1.5.1:53 transport=UDP family=IPv4 name=p214-contacts.icloud.com.cn type=28
+Oct  8 21:07:22.127908 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=client id=12580 10.1.5.1:53 name=p214-contacts.icloud.com.cn type=28 rcode=0 answers=1
+Oct  8 21:07:22.128004 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=client rr=1/1 owner=p214-contacts.icloud.com.cn type=5 ttl=600 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.128492 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA AAAA fallback to A
+Oct  8 21:07:22.129109 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream query purpose=dns64-A id=22623 10.1.5.1:53 transport=UDP family=IPv4 name=p214-contacts.icloud.com.cn type=1
+Oct  8 21:07:22.166620 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A id=22623 10.1.5.1:53 name=p214-contacts.icloud.com.cn type=1 rcode=0 answers=9
+Oct  8 21:07:22.166752 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=1/9 owner=p214-contacts.icloud.com.cn type=5 ttl=58 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.166848 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=2/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.124
+Oct  8 21:07:22.166901 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=3/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.108
+Oct  8 21:07:22.166953 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=4/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.120
+Oct  8 21:07:22.166993 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=5/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.236
+Oct  8 21:07:22.167109 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=6/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.240
+Oct  8 21:07:22.167160 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=7/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.252
+Oct  8 21:07:22.167210 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=8/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.244
+Oct  8 21:07:22.167612 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA upstream purpose=dns64-A rr=9/9 owner=contacts.fe.apple-dns.cn type=1 ttl=58 address=222.73.192.112
+Oct  8 21:07:22.171261 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=1/9 owner=p214-contacts.icloud.com.cn type=5 ttl=58 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.171365 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=2/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c07c embeddedIPv4=222.73.192.124
+Oct  8 21:07:22.171660 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=3/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c06c embeddedIPv4=222.73.192.108
+Oct  8 21:07:22.171711 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=4/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c078 embeddedIPv4=222.73.192.120
+Oct  8 21:07:22.172010 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=5/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0ec embeddedIPv4=222.73.192.236
+Oct  8 21:07:22.172129 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=6/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f0 embeddedIPv4=222.73.192.240
+Oct  8 21:07:22.172231 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=7/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0fc embeddedIPv4=222.73.192.252
+Oct  8 21:07:22.172302 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=8/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f4 embeddedIPv4=222.73.192.244
+Oct  8 21:07:22.172415 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA synthesized rr=9/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c070 embeddedIPv4=222.73.192.112
+Oct  8 21:07:22.173129 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream id=12580 name=p214-contacts.icloud.com.cn qtype=28 mode=synthesized-AAAA transport=TCP rcode=0 tc=false answers=9 bytes=526 originalBytes=526 udpLimit=512
+Oct  8 21:07:22.173230 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=1/9 owner=p214-contacts.icloud.com.cn type=5 ttl=58 alias=contacts.fe.apple-dns.cn
+Oct  8 21:07:22.173326 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=2/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c07c embeddedIPv4=222.73.192.124
+Oct  8 21:07:22.173412 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=3/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c06c embeddedIPv4=222.73.192.108
+Oct  8 21:07:22.173505 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=4/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c078 embeddedIPv4=222.73.192.120
+Oct  8 21:07:22.173600 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=5/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0ec embeddedIPv4=222.73.192.236
+Oct  8 21:07:22.173693 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=6/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f0 embeddedIPv4=222.73.192.240
+Oct  8 21:07:22.173811 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=7/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0fc embeddedIPv4=222.73.192.252
+Oct  8 21:07:22.173905 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=8/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c0f4 embeddedIPv4=222.73.192.244
+Oct  8 21:07:22.173990 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 09B7C7FA downstream rr=9/9 owner=contacts.fe.apple-dns.cn type=28 ttl=58 address=fd64:64:64::de49:c070 embeddedIPv4=222.73.192.112
+Oct  8 21:07:22.178774 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=2 closed txBytes=0 rxBytes=0
+Oct  8 21:07:22.210241 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=1 open fd64:64:64:1::2:62296>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:22.212338 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=1 first-send bytes=44
+Oct  8 21:07:22.215811 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=1 first-receive bytes=44
+Oct  8 21:07:22.222205 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 4507DFDD client id=35643 name=api.smoot.apple.cn type=65 transport=UDP
+Oct  8 21:07:22.222405 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 4507DFDD upstream query purpose=client id=35643 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=65
+Oct  8 21:07:22.222740 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 client id=13188 name=api.smoot.apple.cn type=28 transport=UDP
+Oct  8 21:07:22.223072 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 upstream query purpose=client id=13188 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=28
+Oct  8 21:07:22.229619 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 4507DFDD upstream purpose=client id=35643 10.1.5.1:53 name=api.smoot.apple.cn type=65 rcode=0 answers=0
+Oct  8 21:07:22.229889 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 4507DFDD downstream id=35643 name=api.smoot.apple.cn qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512
+Oct  8 21:07:22.230570 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 upstream purpose=client id=13188 10.1.5.1:53 name=api.smoot.apple.cn type=28 rcode=0 answers=0
+Oct  8 21:07:22.230834 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 AAAA fallback to A
+Oct  8 21:07:22.231001 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 upstream query purpose=dns64-A id=57897 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=1
+Oct  8 21:07:22.241679 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 upstream purpose=dns64-A id=57897 10.1.5.1:53 name=api.smoot.apple.cn type=1 rcode=0 answers=0
+Oct  8 21:07:22.242008 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS A00B6B64 downstream id=13188 name=api.smoot.apple.cn qtype=28 mode=error transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512
+Oct  8 21:07:22.416236 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=2 open fd64:64:64:1::2:54322>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:22.418981 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=2 first-send bytes=1452
+Oct  8 21:07:22.632015 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=3 open fd64:64:64:1::2:52089>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:22.635039 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=3 first-send bytes=46
+Oct  8 21:07:22.644312 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=3 first-receive bytes=46
+Oct  8 21:07:23.287152 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=4 open fd64:64:64:1::2:56809>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:23.300027 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=4 first-receive bytes=44
+Oct  8 21:07:23.477187 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=3 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195
+Oct  8 21:07:23.749950 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=3 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive
+Oct  8 21:07:23.750200 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=3 closed txBytes=32768 rxBytes=32768
+Oct  8 21:07:23.907500 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E97F1017 client id=50725 name=ipv4.icanhazip.com type=65 transport=UDP
+Oct  8 21:07:23.907590 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS E97F1017 upstream query purpose=client id=50725 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=65
+Oct  8 21:07:23.908405 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 client id=31033 name=ipv4.icanhazip.com type=28 transport=UDP
+Oct  8 21:07:23.908508 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream query purpose=client id=31033 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=28
+Oct  8 21:07:23.918556 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream purpose=client id=31033 10.1.5.1:53 name=ipv4.icanhazip.com type=28 rcode=0 answers=0
+Oct  8 21:07:23.918780 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 AAAA fallback to A
+Oct  8 21:07:23.919328 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream query purpose=dns64-A id=65169 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=1
+Oct  8 21:07:23.927215 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream purpose=dns64-A id=65169 10.1.5.1:53 name=ipv4.icanhazip.com type=1 rcode=0 answers=2
+Oct  8 21:07:23.927266 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream purpose=dns64-A rr=1/2 owner=ipv4.icanhazip.com type=1 ttl=235 address=104.16.184.241
+Oct  8 21:07:23.927430 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 upstream purpose=dns64-A rr=2/2 owner=ipv4.icanhazip.com type=1 ttl=235 address=104.16.185.241
+Oct  8 21:07:23.927801 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 synthesized rr=1/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241
+Oct  8 21:07:23.927893 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 synthesized rr=2/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241
+Oct  8 21:07:23.928048 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 downstream id=31033 name=ipv4.icanhazip.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=2 bytes=128 originalBytes=128 udpLimit=512
+Oct  8 21:07:23.928146 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 downstream rr=1/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241
+Oct  8 21:07:23.928186 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS EBBF5FC1 downstream rr=2/2 owner=ipv4.icanhazip.com type=28 ttl=235 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241
+Oct  8 21:07:23.940652 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=5 first-send bytes=1200
+Oct  8 21:07:24.085948 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=5 first-receive bytes=1200
+Oct  8 21:07:24.454290 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 client id=374 name=example.com type=65 transport=UDP
+Oct  8 21:07:24.454577 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 upstream query purpose=client id=374 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=65
+Oct  8 21:07:24.454767 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE client id=35992 name=example.com type=28 transport=UDP
+Oct  8 21:07:24.455963 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE upstream query purpose=client id=35992 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=28
+Oct  8 21:07:24.461802 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 upstream purpose=client id=374 10.1.5.1:53 name=example.com type=65 rcode=0 answers=1
+Oct  8 21:07:24.461850 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 upstream purpose=client rr=1/1 owner=example.com type=65 ttl=212 rdataBytes=61
+Oct  8 21:07:24.462050 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 downstream id=374 name=example.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=102 originalBytes=102 udpLimit=512
+Oct  8 21:07:24.462138 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 6C365974 downstream rr=1/1 owner=example.com type=65 ttl=212 rdataBytes=61
+Oct  8 21:07:24.465707 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE upstream purpose=client id=35992 10.1.5.1:53 name=example.com type=28 rcode=0 answers=2
+Oct  8 21:07:24.465929 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE upstream purpose=client rr=1/2 owner=example.com type=28 ttl=306 address=2606:4700:10::ac42:93f3
+Oct  8 21:07:24.466023 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE upstream purpose=client rr=2/2 owner=example.com type=28 ttl=306 address=2606:4700:10::6814:179a
+Oct  8 21:07:24.466460 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE downstream id=35992 name=example.com qtype=28 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=2 bytes=85 originalBytes=85 udpLimit=512
+Oct  8 21:07:24.466592 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE downstream rr=1/2 owner=example.com type=28 ttl=306 address=2606:4700:10::ac42:93f3
+Oct  8 21:07:24.466678 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: DNS 5035FEEE downstream rr=2/2 owner=example.com type=28 ttl=306 address=2606:4700:10::6814:179a
+Oct  8 21:07:24.477128 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=6 open fd64:64:64:1::2:56060>2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3
+Oct  8 21:07:24.479056 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=6 first-send bytes=1200
+Oct  8 21:07:24.741755 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=7 open fd64:64:64:1::2:53566>2606:4700:10::6814:179a:443 -> 2606:4700:10::6814:179a
+Oct  8 21:07:24.745587 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=7 first-send bytes=1200
+Oct  8 21:07:24.749978 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=4 2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3
+Oct  8 21:07:24.754901 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=6 first-receive bytes=1200
+Oct  8 21:07:24.956554 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=7 first-receive bytes=1200
+Oct  8 21:07:25.035482 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=4 connected
+Oct  8 21:07:25.254955 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: TCP flow=4 closed txBytes=517 rxBytes=4572
+Oct  8 21:07:26.494378 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=1 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:26.494475 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=6 close reason=stop txPackets=15 rxPackets=13
+Oct  8 21:07:26.494525 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=4 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:26.494636 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=7 close reason=stop txPackets=1 rxPackets=6
+Oct  8 21:07:26.494745 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=2 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:26.494831 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=5 close reason=stop txPackets=12 rxPackets=11
+Oct  8 21:07:26.494918 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: UDP flow=3 close reason=stop txPackets=5 rxPackets=5
+Oct  8 21:07:26.495003 PacketTunnel(PacketTunnel.debug.dylib)[698] <Info>: stopped reason=1
+Oct  8 21:07:28.262129 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS selection source=physical candidates=10.1.5.1 selected=10.1.5.1:53
+Oct  8 21:07:28.495358 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: started mtu=1500 tunnelIPv4=none fullTunnel=true resolver=10.1.5.1:53 dnsSource=physical family=IPv4
+Oct  8 21:07:28.614269 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 client id=44915 name=gateway.icloud.com type=28 transport=UDP
+Oct  8 21:07:28.615361 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream query purpose=client id=44915 10.1.5.1:53 transport=UDP family=IPv4 name=gateway.icloud.com type=28
+Oct  8 21:07:28.615645 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS C78375B0 client id=39554 name=_dns.resolver.arpa type=64 transport=UDP
+Oct  8 21:07:28.615965 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS C78375B0 upstream query purpose=client id=39554 10.1.5.1:53 transport=UDP family=IPv4 name=_dns.resolver.arpa type=64
+Oct  8 21:07:28.633963 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A id=17980 10.1.5.1:53 name=gateway.icloud.com type=1 rcode=0 answers=7
+Oct  8 21:07:28.634013 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=1/7 owner=gateway.icloud.com type=5 ttl=10019 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:28.634120 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=2/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.66
+Oct  8 21:07:28.634174 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=3/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.69
+Oct  8 21:07:28.634289 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=4/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.68
+Oct  8 21:07:28.634439 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=5/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.28
+Oct  8 21:07:28.634547 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=6/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.64
+Oct  8 21:07:28.634677 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 upstream purpose=dns64-A rr=7/7 owner=gateway.fe2.apple-dns.net type=1 ttl=19 address=17.248.216.20
+Oct  8 21:07:28.635517 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=1/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:28.635673 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=2/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:28.635822 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=3/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69
+Oct  8 21:07:28.635956 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=4/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:28.636063 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=5/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:28.636149 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=6/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:28.636190 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 synthesized rr=7/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:28.636232 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream id=44915 name=gateway.icloud.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=7 bytes=411 originalBytes=411 udpLimit=512
+Oct  8 21:07:28.636321 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=1/7 owner=gateway.icloud.com type=5 ttl=600 alias=gateway.fe2.apple-dns.net
+Oct  8 21:07:28.636371 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=2/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d842 embeddedIPv4=17.248.216.66
+Oct  8 21:07:28.636463 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=3/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d845 embeddedIPv4=17.248.216.69
+Oct  8 21:07:28.636553 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=4/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d844 embeddedIPv4=17.248.216.68
+Oct  8 21:07:28.636603 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=5/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d81c embeddedIPv4=17.248.216.28
+Oct  8 21:07:28.636653 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=6/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d840 embeddedIPv4=17.248.216.64
+Oct  8 21:07:28.636738 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS D598CDB9 downstream rr=7/7 owner=gateway.fe2.apple-dns.net type=28 ttl=19 address=fd64:64:64::11f8:d814 embeddedIPv4=17.248.216.20
+Oct  8 21:07:28.636985 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS C78375B0 upstream purpose=client id=39554 10.1.5.1:53 name=_dns.resolver.arpa type=64 rcode=4 answers=0
+Oct  8 21:07:28.637233 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS C78375B0 downstream id=39554 name=_dns.resolver.arpa qtype=64 mode=upstream-passthrough transport=UDP rcode=4 tc=false answers=0 bytes=36 originalBytes=36 udpLimit=512
+Oct  8 21:07:28.832709 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 2781ED14 client id=45826 name=api.smoot.apple.cn type=65 transport=UDP
+Oct  8 21:07:28.832882 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 2781ED14 upstream query purpose=client id=45826 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=65
+Oct  8 21:07:28.833378 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 client id=14281 name=api.smoot.apple.cn type=28 transport=UDP
+Oct  8 21:07:28.833772 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 upstream query purpose=client id=14281 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=28
+Oct  8 21:07:28.843897 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 2781ED14 upstream purpose=client id=45826 10.1.5.1:53 name=api.smoot.apple.cn type=65 rcode=0 answers=0
+Oct  8 21:07:28.844247 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 2781ED14 downstream id=45826 name=api.smoot.apple.cn qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512
+Oct  8 21:07:28.845666 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 upstream purpose=client id=14281 10.1.5.1:53 name=api.smoot.apple.cn type=28 rcode=0 answers=0
+Oct  8 21:07:28.846053 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 AAAA fallback to A
+Oct  8 21:07:28.846267 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 upstream query purpose=dns64-A id=39592 10.1.5.1:53 transport=UDP family=IPv4 name=api.smoot.apple.cn type=1
+Oct  8 21:07:28.851591 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 upstream purpose=dns64-A id=39592 10.1.5.1:53 name=api.smoot.apple.cn type=1 rcode=0 answers=0
+Oct  8 21:07:28.851965 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS CB7ADBD1 downstream id=14281 name=api.smoot.apple.cn qtype=28 mode=error transport=UDP rcode=0 tc=false answers=0 bytes=120 originalBytes=120 udpLimit=512
+Oct  8 21:07:28.888974 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=1 DNS
+Oct  8 21:07:28.889053 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=1 closed txBytes=0 rxBytes=0
+Oct  8 21:07:29.047480 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=1 open fd64:64:64:1::2:60329>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:29.049534 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=1 first-send bytes=44
+Oct  8 21:07:29.063784 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=1 first-receive bytes=44
+Oct  8 21:07:29.264623 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=2 open fd64:64:64:1::2:63118>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:29.267204 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=2 first-send bytes=1452
+Oct  8 21:07:29.285000 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=2 first-receive bytes=1452
+Oct  8 21:07:29.484190 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=3 open fd64:64:64:1::2:63817>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:29.488314 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=3 first-send bytes=46
+Oct  8 21:07:29.503575 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=3 first-receive bytes=46
+Oct  8 21:07:30.162117 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=4 open fd64:64:64:1::2:61140>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195
+Oct  8 21:07:30.165123 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=4 first-send bytes=44
+Oct  8 21:07:30.185405 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=4 first-receive bytes=44
+Oct  8 21:07:30.384527 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=2 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195
+Oct  8 21:07:30.401702 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=2 connected
+Oct  8 21:07:30.668210 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=2 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive
+Oct  8 21:07:30.669108 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: TCP flow=2 closed txBytes=32768 rxBytes=32768
+Oct  8 21:07:30.831484 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B client id=10105 name=ipv4.icanhazip.com type=65 transport=UDP
+Oct  8 21:07:30.831661 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B upstream query purpose=client id=10105 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=65
+Oct  8 21:07:30.832184 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 client id=6061 name=ipv4.icanhazip.com type=28 transport=UDP
+Oct  8 21:07:30.832881 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream query purpose=client id=6061 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=28
+Oct  8 21:07:30.839030 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B upstream purpose=client id=10105 10.1.5.1:53 name=ipv4.icanhazip.com type=65 rcode=0 answers=1
+Oct  8 21:07:30.839181 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B upstream purpose=client rr=1/1 owner=ipv4.icanhazip.com type=65 ttl=436 rdataBytes=25
+Oct  8 21:07:30.839732 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B downstream id=10105 name=ipv4.icanhazip.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=73 originalBytes=73 udpLimit=512
+Oct  8 21:07:30.839779 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 73967A0B downstream rr=1/1 owner=ipv4.icanhazip.com type=65 ttl=436 rdataBytes=25
+Oct  8 21:07:30.844369 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream purpose=client id=6061 10.1.5.1:53 name=ipv4.icanhazip.com type=28 rcode=0 answers=0
+Oct  8 21:07:30.844579 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 AAAA fallback to A
+Oct  8 21:07:30.845043 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream query purpose=dns64-A id=17715 10.1.5.1:53 transport=UDP family=IPv4 name=ipv4.icanhazip.com type=1
+Oct  8 21:07:30.852887 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream purpose=dns64-A id=17715 10.1.5.1:53 name=ipv4.icanhazip.com type=1 rcode=0 answers=2
+Oct  8 21:07:30.853151 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream purpose=dns64-A rr=1/2 owner=ipv4.icanhazip.com type=1 ttl=229 address=104.16.184.241
+Oct  8 21:07:30.853346 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 upstream purpose=dns64-A rr=2/2 owner=ipv4.icanhazip.com type=1 ttl=229 address=104.16.185.241
+Oct  8 21:07:30.853690 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 synthesized rr=1/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241
+Oct  8 21:07:30.853733 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 synthesized rr=2/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241
+Oct  8 21:07:30.853773 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 downstream id=6061 name=ipv4.icanhazip.com qtype=28 mode=synthesized-AAAA transport=UDP rcode=0 tc=false answers=2 bytes=128 originalBytes=128 udpLimit=512
+Oct  8 21:07:30.853820 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 downstream rr=1/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b8f1 embeddedIPv4=104.16.184.241
+Oct  8 21:07:30.853930 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 6F978A08 downstream rr=2/2 owner=ipv4.icanhazip.com type=28 ttl=229 address=fd64:64:64::6810:b9f1 embeddedIPv4=104.16.185.241
+Oct  8 21:07:30.867588 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=5 open fd64:64:64:1::2:55713>fd64:64:64::6810:b8f1:443 -> 104.16.184.241
+Oct  8 21:07:30.871166 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=5 first-send bytes=1200
+Oct  8 21:07:31.017208 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=5 first-receive bytes=1200
+Oct  8 21:07:31.487577 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A client id=2701 name=example.com type=65 transport=UDP
+Oct  8 21:07:31.487883 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A upstream query purpose=client id=2701 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=65
+Oct  8 21:07:31.488830 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 client id=1269 name=example.com type=28 transport=UDP
+Oct  8 21:07:31.490207 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 upstream query purpose=client id=1269 10.1.5.1:53 transport=UDP family=IPv4 name=example.com type=28
+Oct  8 21:07:31.543841 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 upstream purpose=client id=1269 10.1.5.1:53 name=example.com type=28 rcode=0 answers=2
+Oct  8 21:07:31.544703 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 upstream purpose=client rr=1/2 owner=example.com type=28 ttl=492 address=2606:4700:10::6814:179a
+Oct  8 21:07:31.545051 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 upstream purpose=client rr=2/2 owner=example.com type=28 ttl=492 address=2606:4700:10::ac42:93f3
+Oct  8 21:07:31.545805 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 downstream id=1269 name=example.com qtype=28 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=2 bytes=85 originalBytes=85 udpLimit=512
+Oct  8 21:07:31.546105 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 downstream rr=1/2 owner=example.com type=28 ttl=492 address=2606:4700:10::6814:179a
+Oct  8 21:07:31.546242 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 4E5ECD59 downstream rr=2/2 owner=example.com type=28 ttl=492 address=2606:4700:10::ac42:93f3
+Oct  8 21:07:31.586657 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A upstream purpose=client id=2701 10.1.5.1:53 name=example.com type=65 rcode=0 answers=1
+Oct  8 21:07:31.587206 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A upstream purpose=client rr=1/1 owner=example.com type=65 ttl=431 rdataBytes=61
+Oct  8 21:07:31.588336 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A downstream id=2701 name=example.com qtype=65 mode=upstream-passthrough transport=UDP rcode=0 tc=false answers=1 bytes=102 originalBytes=102 udpLimit=512
+Oct  8 21:07:31.588647 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: DNS 8C822A5A downstream rr=1/1 owner=example.com type=65 ttl=431 rdataBytes=61
+Oct  8 21:07:31.610660 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=6 open fd64:64:64:1::2:49220>2606:4700:10::6814:179a:443 -> 2606:4700:10::6814:179a
+Oct  8 21:07:31.613331 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=6 first-send bytes=1200
+Oct  8 21:07:31.792626 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=6 first-receive bytes=1200
+Oct  8 21:07:33.585207 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=3 close reason=stop txPackets=5 rxPackets=5
+Oct  8 21:07:33.585334 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=6 close reason=stop txPackets=14 rxPackets=14
+Oct  8 21:07:33.585392 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=5 close reason=stop txPackets=11 rxPackets=11
+Oct  8 21:07:33.585433 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=2 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:33.585556 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=1 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:33.585645 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: UDP flow=4 close reason=stop txPackets=1 rxPackets=1
+Oct  8 21:07:33.585984 PacketTunnel(PacketTunnel.debug.dylib)[700] <Info>: stopped reason=1

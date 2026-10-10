@@ -1,0 +1,145 @@
+{
+  "echoIPv4" : "100.82.58.195",
+  "finished" : true,
+  "mtu" : 1500,
+  "publicCheck" : true,
+  "resolver" : "1.1.1.1",
+  "resolverPort" : 53,
+  "runID" : "F340389D-E09D-4A69-BCCE-1CBA0F2BF542",
+  "steps" : [
+    {
+      "name" : "ipv4-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达"
+    },
+    {
+      "name" : "ipv4-tcp-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达"
+    },
+    {
+      "name" : "https-dualstack-positive-control",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-1-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-1-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-1-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-1-https-ipv4",
+      "result" : "PASS：HTTPS ipv4.icanhazip.com HTTP 200，15 字节"
+    },
+    {
+      "name" : "round-1-https-dualstack",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-1-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 43,\n  \"events\" : [\n    \"DNS 30B7EBBE api.smoot.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=api.smoot.apple.com type=65 rcode=0 addresses=\",\n    \"DNS 002EFDE7 reply bytes=125\",\n    \"DNS 85300CC2 bag-smoot.v.aaplimg.com type=65\",\n    \"DNS upstream 1.1.1.1:53 name=api.smoot.apple.com type=1 rcode=0 addresses=44.233.108.18\",\n    \"DNS 30B7EBBE reply bytes=87\",\n    \"DNS upstream 1.1.1.1:53 name=api.smoot.apple.com type=28 rcode=0 addresses=\",\n    \"DNS D89D8B01 AAAA fallback to A\",\n    \"DNS 0777363F cl4.apple.com type=65\",\n    \"DNS A4D9C3C0 cl4.apple.com type=28\",\n    \"DNS 6C3F15F4 cl4.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=bag-smoot.v.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS 85300CC2 reply bytes=101\",\n    \"DNS 47D6539C gspe35-ssl.ls.apple.com type=65\",\n    \"DNS 13C25887 gspe35-ssl.ls.apple.com type=28\",\n    \"DNS 2C4D5179 gspe35-ssl.ls.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=cl4.apple.com type=28 rcode=0 addresses=2403:300:a26:f000::132,2403:300:a26:f000::142\",\n    \"DNS A4D9C3C0 reply bytes=164\",\n    \"DNS upstream 1.1.1.1:53 name=gspe35-ssl.ls.apple.com type=28 rcode=0 addresses=2403:300:a26:f000::152,2403:300:a26:f000::134\",\n    \"DNS 13C25887 reply bytes=218\",\n    \"TCP flow=14 2403:300:a26:f000::132:443 -> 2403:300:a26:f000::132\",\n    \"DNS upstream 1.1.1.1:53 name=api.smoot.apple.com type=1 rcode=0 addresses=54.69.185.163\",\n    \"DNS D89D8B01 synthesized AAAA\",\n    \"DNS D89D8B01 reply bytes=144\",\n    \"DNS upstream 1.1.1.1:53 name=gspe35-ssl.ls.apple.com type=65 rcode=0 addresses=\",\n    \"DNS 47D6539C reply bytes=216\",\n    \"DNS D0BFCFDF gspe35-cdn.v.aaplimg.com type=65\",\n    \"TCP flow=15 2403:300:a26:f000::152:443 -> 2403:300:a26:f000::152\",\n    \"DNS upstream 1.1.1.1:53 name=cl4.apple.com type=1 rcode=0 addresses=17.253.83.154,17.253.83.144\",\n    \"DNS 6C3F15F4 reply bytes=140\",\n    \"DNS upstream 1.1.1.1:53 name=cl4.apple.com type=65 rcode=0 addresses=\",\n    \"DNS 0777363F reply bytes=162\",\n    \"DNS 21435684 cl4.g.aaplimg.com type=65\",\n    \"DNS upstream 1.1.1.1:53 name=gspe35-ssl.ls.apple.com type=1 rcode=0 addresses=17.253.83.134,17.253.83.133\",\n    \"DNS 2C4D5179 reply bytes=194\",\n    \"TCP flow=14 connected\",\n    \"DNS upstream 1.1.1.1:53 name=cl4.g.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS 21435684 reply bytes=95\",\n    \"DNS upstream 1.1.1.1:53 name=gspe35-cdn.v.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS D0BFCFDF reply bytes=102\",\n    \"TCP flow=16 fd64:64:64::3645:b9a3:443 -> 54.69.185.163\",\n    \"TCP flow=15 connected\",\n    \"TCP flow=16 connected\",\n    \"DNS E05E2E93 ocsp2.apple.com type=65\",\n    \"DNS 97CD905D ocsp2.apple.com type=28\",\n    \"DNS 2939535B ocsp2.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=ocsp2.apple.com type=65 rcode=0 addresses=\",\n    \"DNS E05E2E93 reply bytes=117\",\n    \"DNS 1AAC119E ocsp2.g.aaplimg.com type=65\",\n    \"DNS upstream 1.1.1.1:53 name=ocsp2.g.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS 1AAC119E reply bytes=97\",\n    \"DNS upstream 1.1.1.1:53 name=ocsp2.apple.com type=1 rcode=0 addresses=17.253.83.149,17.253.83.152\",\n    \"DNS 2939535B reply bytes=95\",\n    \"DNS upstream 1.1.1.1:53 name=ocsp2.apple.com type=28 rcode=0 addresses=2620:149:a21:f000::141,2620:149:a21:f000::136\",\n    \"DNS 97CD905D reply bytes=119\",\n    \"TCP flow=17 2620:149:a21:f000::141:443 -> 2620:149:a21:f000::141\",\n    \"TCP flow=17 connected\",\n    \"TCP flow=5 abort connect timeout\",\n    \"TCP flow=6 abort connect timeout\",\n    \"TCP flow=5 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=6 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=11 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=12 closed txBytes=0 rxBytes=0\",\n    \"DNS 017F8D9B gspe21-ssl.ls.apple.com type=65\",\n    \"DNS DB60C486 gspe21-ssl.ls.apple.com type=28\",\n    \"DNS A8F8663C gspe21-ssl.ls.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=gspe21-ssl.ls.apple.com type=28 rcode=0 addresses=2403:300:a26:f000::135,2403:300:a26:f000::134\",\n    \"DNS DB60C486 reply bytes=218\",\n    \"DNS upstream 1.1.1.1:53 name=gspe21-ssl.ls.apple.com type=1 rcode=0 addresses=17.253.83.147,17.253.83.149\",\n    \"DNS A8F8663C reply bytes=194\",\n    \"TCP flow=18 2403:300:a26:f000::135:443 -> 2403:300:a26:f000::135\",\n    \"TCP flow=19 2403:300:a26:f000::135:443 -> 2403:300:a26:f000::135\",\n    \"TCP flow=20 2403:300:a26:f000::135:443 -> 2403:300:a26:f000::135\",\n    \"TCP flow=21 2403:300:a26:f000::135:443 -> 2403:300:a26:f000::135\",\n    \"TCP flow=15 closed txBytes=1043 rxBytes=92257\",\n    \"DNS upstream 1.1.1.1:53 name=gspe21-ssl.ls.apple.com type=65 rcode=0 addresses=\",\n    \"DNS 017F8D9B reply bytes=216\",\n    \"DNS 64921915 gspe21-cdn.v.aaplimg.com type=65\",\n    \"DNS upstream 1.1.1.1:53 name=gspe21-cdn.v.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS 64921915 reply bytes=102\",\n    \"TCP flow=18 connected\",\n    \"TCP flow=21 connected\",\n    \"TCP flow=20 connected\",\n    \"TCP flow=19 connected\",\n    \"TCP flow=20 closed txBytes=1002 rxBytes=73446\",\n    \"TCP flow=21 closed txBytes=1011 rxBytes=82184\",\n    \"DNS 1DF25897 gsp-ssl.ls.apple.com type=65\",\n    \"DNS D791D617 gsp-ssl.ls.apple.com type=28\",\n    \"DNS 369C6BB2 gsp-ssl.ls.apple.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=gsp-ssl.ls.apple.com type=65 rcode=0 addresses=\",\n    \"DNS 1DF25897 reply bytes=146\",\n    \"DNS BFC0264F get-bx.g.aaplimg.com type=65\",\n    \"DNS upstream 1.1.1.1:53 name=gsp-ssl.ls.apple.com type=28 rcode=0 addresses=2620:149:a21:f000::148,2620:149:a21:f000::135\",\n    \"DNS D791D617 reply bytes=148\",\n    \"DNS upstream 1.1.1.1:53 name=gsp-ssl.ls.apple.com type=1 rcode=0 addresses=17.253.61.135,17.253.61.153\",\n    \"DNS 369C6BB2 reply bytes=124\",\n    \"DNS upstream 1.1.1.1:53 name=get-bx.g.aaplimg.com type=65 rcode=0 addresses=\",\n    \"DNS BFC0264F reply bytes=98\",\n    \"TCP flow=22 2620:149:a21:f000::148:443 -> 2620:149:a21:f000::148\",\n    \"TCP flow=22 connected\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 52,\n  \"mtu\" : 1500,\n  \"packets\" : 767,\n  \"rejected\" : 12,\n  \"running\" : true,\n  \"rxBytes\" : 983943,\n  \"tcpFlows\" : 7,\n  \"txBytes\" : 70472,\n  \"udpFlows\" : 7,\n  \"udpReplies\" : 46\n}"
+    },
+    {
+      "name" : "round-1-stop",
+      "result" : "PASS：VPN disconnected"
+    },
+    {
+      "name" : "round-2-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-2-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-2-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-2-https-ipv4",
+      "result" : "PASS：HTTPS ipv4.icanhazip.com HTTP 200，15 字节"
+    },
+    {
+      "name" : "round-2-https-dualstack",
+      "result" : "PASS：HTTPS example.com HTTP 200，577 字节"
+    },
+    {
+      "name" : "round-2-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 19,\n  \"events\" : [\n    \"DNS FD9CBF9F reply bytes=347\",\n    \"TCP flow=2 DNS\",\n    \"TCP flow=2 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=3 2606:4700:4700::1001:853 -> 2606:4700:4700::1001\",\n    \"DNS upstream 1.1.1.1:53 name=15-courier2.push.apple.com type=28 rcode=0 addresses=2620:149:a44:10c::b\",\n    \"DNS 3EE45037 reply bytes=165\",\n    \"DNS FACE7B81 apac-asia-courier-vs.push-apple.com.akadns.net type=28\",\n    \"DNS upstream 1.1.1.1:53 name=one.one.one.one type=1 rcode=0 addresses=1.0.0.1,1.1.1.1\",\n    \"DNS F3154AE1 reply bytes=65\",\n    \"DNS upstream 1.1.1.1:53 name=apac-asia-courier-vs.push-apple.com.akadns.net type=28 rcode=0 addresses=2403:300:a42:c0a::7,2403:300:a42:c0a::6,2403:300:a42:c0a::4,2403:300:a42:c0a::5,2403:300:a42:c0a::c,2403:300:a42:c0a::b,2403:300:a42:c0a::a,2403:300:a42:c0a::8\",\n    \"DNS FACE7B81 reply bytes=288\",\n    \"UDP flow=1 open fd64:64:64:1::2:52719>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=1 first-send bytes=44\",\n    \"UDP flow=1 first-receive bytes=44\",\n    \"TCP flow=4 2403:300:a42:c0a::7:5223 -> 2403:300:a42:c0a::7\",\n    \"TCP flow=5 2606:4700:4700::1001:443 -> 2606:4700:4700::1001\",\n    \"UDP flow=2 open fd64:64:64:1::2:51103>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=2 first-send bytes=1452\",\n    \"TCP flow=4 connected\",\n    \"UDP flow=2 first-receive bytes=1452\",\n    \"TCP flow=6 2606:4700:4700::1001:443 -> 2606:4700:4700::1001\",\n    \"UDP flow=3 open fd64:64:64:1::2:51550>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=3 first-send bytes=46\",\n    \"UDP flow=3 first-receive bytes=46\",\n    \"IPv6 rejected nextHeader=0 bytes=116 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"UDP flow=4 open fd64:64:64:1::2:56003>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=4 first-send bytes=44\",\n    \"UDP flow=4 first-receive bytes=44\",\n    \"TCP flow=7 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=7 connected\",\n    \"TCP flow=7 closed txBytes=32768 rxBytes=32768\",\n    \"DNS B95B30D1 ipv4.icanhazip.com type=65\",\n    \"DNS 23FABCD0 ipv4.icanhazip.com type=28\",\n    \"DNS EC49417C ipv4.icanhazip.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=ipv4.icanhazip.com type=28 rcode=0 addresses=\",\n    \"DNS 23FABCD0 AAAA fallback to A\",\n    \"DNS upstream 1.1.1.1:53 name=ipv4.icanhazip.com type=1 rcode=0 addresses=104.16.184.241,104.16.185.241\",\n    \"DNS 23FABCD0 synthesized AAAA\",\n    \"DNS 23FABCD0 reply bytes=128\",\n    \"DNS upstream 1.1.1.1:53 name=ipv4.icanhazip.com type=1 rcode=0 addresses=104.16.184.241,104.16.185.241\",\n    \"DNS EC49417C reply bytes=68\",\n    \"DNS upstream 1.1.1.1:53 name=ipv4.icanhazip.com type=65 rcode=0 addresses=\",\n    \"DNS B95B30D1 reply bytes=73\",\n    \"TCP flow=8 2606:4700:4700::1111:443 -> 2606:4700:4700::1111\",\n    \"TCP flow=9 2606:4700:4700::1111:443 -> 2606:4700:4700::1111\",\n    \"IPv6 rejected nextHeader=0 bytes=96 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"UDP flow=5 open fd64:64:64:1::2:64243>fd64:64:64::6810:b8f1:443 -> 104.16.184.241\",\n    \"UDP flow=5 first-send bytes=1200\",\n    \"UDP flow=5 first-receive bytes=1200\",\n    \"UDP flow=6 open fd64:64:64:1::2:52049>fd64:64:64::6810:b9f1:443 -> 104.16.185.241\",\n    \"UDP flow=6 first-send bytes=1200\",\n    \"TCP flow=10 fd64:64:64::6810:b8f1:443 -> 104.16.184.241\",\n    \"UDP flow=6 first-receive bytes=1200\",\n    \"TCP flow=10 connected\",\n    \"TCP flow=10 closed txBytes=517 rxBytes=2785\",\n    \"DNS 66B950CA example.com type=65\",\n    \"DNS F35B8920 example.com type=28\",\n    \"DNS 44BE2685 example.com type=1\",\n    \"DNS upstream 1.1.1.1:53 name=example.com type=28 rcode=0 addresses=2606:4700:10::ac42:93f3,2606:4700:10::6814:179a\",\n    \"DNS F35B8920 reply bytes=85\",\n    \"DNS upstream 1.1.1.1:53 name=example.com type=1 rcode=0 addresses=172.66.147.243,104.20.23.154\",\n    \"DNS 44BE2685 reply bytes=61\",\n    \"DNS upstream 1.1.1.1:53 name=example.com type=65 rcode=0 addresses=\",\n    \"DNS 66B950CA reply bytes=102\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"UDP flow=7 open fd64:64:64:1::2:61284>2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3\",\n    \"UDP flow=7 first-send bytes=1200\",\n    \"UDP flow=7 first-receive bytes=1200\",\n    \"UDP flow=8 open fd64:64:64:1::2:51472>2606:4700:10::6814:179a:443 -> 2606:4700:10::6814:179a\",\n    \"TCP flow=11 2606:4700:10::ac42:93f3:443 -> 2606:4700:10::ac42:93f3\",\n    \"UDP flow=8 first-send bytes=1200\",\n    \"UDP flow=8 first-receive bytes=1200\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1197 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"TCP flow=11 connected\",\n    \"IPv6 rejected nextHeader=58 bytes=119 src=fd64:64:64:1::2 dst=2606:4700:10::ac42:93f3\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"TCP flow=11 closed txBytes=517 rxBytes=4570\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"TCP flow=12 2606:4700:4700::1111:853 -> 2606:4700:4700::1111\",\n    \"TCP flow=13 2606:4700:4700::1111:853 -> 2606:4700:4700::1111\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"IPv6 rejected nextHeader=58 bytes=1099 src=fd64:64:64:1::2 dst=2606:4700:10::6814:179a\",\n    \"TCP flow=1 abort connect timeout\",\n    \"TCP flow=1 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=12 closed txBytes=0 rxBytes=0\",\n    \"IPv6 rejected nextHeader=58 bytes=1280 src=fd64:64:64:1::2 dst=fd64:64:64::6810:b8f1\",\n    \"TCP flow=3 abort connect timeout\",\n    \"TCP flow=3 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=13 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=5 abort connect timeout\",\n    \"TCP flow=5 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=8 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=6 abort connect timeout\",\n    \"TCP flow=6 closed txBytes=0 rxBytes=0\",\n    \"TCP flow=9 closed txBytes=0 rxBytes=0\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 67,\n  \"mtu\" : 1500,\n  \"packets\" : 253,\n  \"rejected\" : 19,\n  \"running\" : true,\n  \"rxBytes\" : 77222,\n  \"tcpFlows\" : 1,\n  \"txBytes\" : 55737,\n  \"udpFlows\" : 8,\n  \"udpReplies\" : 48\n}"
+    },
+    {
+      "name" : "round-2-stop",
+      "result" : "PASS：VPN disconnected"
+    }
+  ],
+  "timestamp" : "2026-10-08T11:43:27Z",
+  "vpnStatus" : "VPN 未连接"
+}

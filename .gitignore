@@ -1,0 +1,34 @@
+# Android / Gradle build outputs and local configuration
+.gradle/
+**/build/
+**/.cxx/
+.externalNativeBuild/
+local.properties
+
+# IDE and macOS metadata
+.idea/
+*.iml
+.DS_Store
+
+# Downloaded native dependencies and local tooling
+third_party/hev-socks5-tunnel/
+.tools/
+.test-device/
+
+# Xcode build outputs and user-specific settings
+ios/build-*/
+DerivedData/
+*.xcresult/
+*.xcarchive/
+**/xcuserdata/
+*.xcuserstate
+
+# Local logs (keep archived validation logs in docs/)
+/*.log
+android/*.log
+ios/*.log
+
+# Python fixture caches
+**/__pycache__/
+*.py[cod]
+.venv/

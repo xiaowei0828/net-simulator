@@ -1,0 +1,133 @@
+{
+  "echoIPv4" : "100.82.58.195",
+  "finished" : true,
+  "mtu" : 1500,
+  "publicCheck" : false,
+  "resolver" : "100.82.58.195",
+  "resolverPort" : 1053,
+  "runID" : "1DA95AAD-5C3D-45E2-9BDF-26EE86D41B43",
+  "steps" : [
+    {
+      "name" : "ipv4-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达"
+    },
+    {
+      "name" : "ipv4-tcp-positive-control",
+      "result" : "PASS：直接 IPv4 基线可达"
+    },
+    {
+      "name" : "round-1-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-1-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-1-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-1-upstream-dns-tcp",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-1-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-1-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 8,\n  \"events\" : [\n    \"started mtu=1500 fullTunnel=true resolver=100.82.58.195:1053\",\n    \"IPv6 rejected nextHeader=0 bytes=76 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"DNS EF6B2E55 gateway.icloud.com type=28\",\n    \"DNS B6DFFF97 gateway.icloud.com type=1\",\n    \"DNS 755C86D3 _dns.resolver.arpa type=64\",\n    \"DNS upstream 100.82.58.195:1053 type=28 rcode=3\",\n    \"DNS EF6B2E55 AAAA fallback to A\",\n    \"DNS upstream 100.82.58.195:1053 type=64 rcode=3\",\n    \"DNS 755C86D3 reply bytes=36\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=3\",\n    \"DNS B6DFFF97 reply bytes=36\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=3\",\n    \"DNS EF6B2E55 reply bytes=36\",\n    \"TCP flow=1 DNS\",\n    \"TCP flow=1 closed txBytes=0 rxBytes=0\",\n    \"UDP flow=1 open fd64:64:64:1::2:56882>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=1 first-send bytes=44\",\n    \"UDP flow=1 first-receive bytes=44\",\n    \"UDP flow=2 open fd64:64:64:1::2:52411>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=2 first-send bytes=1452\",\n    \"UDP flow=2 first-receive bytes=1452\",\n    \"UDP flow=3 open fd64:64:64:1::2:62280>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=3 first-send bytes=46\",\n    \"UDP flow=3 first-receive bytes=46\",\n    \"IPv6 rejected nextHeader=0 bytes=116 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"UDP flow=4 open fd64:64:64:1::2:50471>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=4 first-send bytes=44\",\n    \"UDP flow=4 first-receive bytes=44\",\n    \"TCP flow=2 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=2 connected\",\n    \"TCP flow=2 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=2 closed txBytes=32768 rxBytes=32768\",\n    \"DNS 6D67C7FE upstream.ipv6lab.test type=28\",\n    \"DNS EAF49433 upstream.ipv6lab.test type=1\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS upstream truncated; retry TCP\",\n    \"DNS upstream 100.82.58.195:1053 type=28 rcode=5\",\n    \"DNS 6D67C7FE AAAA fallback to A\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS upstream truncated; retry TCP\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS EAF49433 reply bytes=107\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS 6D67C7FE synthesized AAAA\",\n    \"DNS 6D67C7FE reply bytes=140\",\n    \"IPv4 captured and dropped\",\n    \"TCP flow=3 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=3 connected\",\n    \"TCP flow=3 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=3 closed txBytes=32768 rxBytes=32768\",\n    \"IPv6 rejected nextHeader=0 bytes=96 src=fe80::38fd:f519:314e:3151 dst=ff02::16\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 9,\n  \"mtu\" : 1500,\n  \"packets\" : 124,\n  \"rejected\" : 3,\n  \"running\" : true,\n  \"rxBytes\" : 67306,\n  \"tcpFlows\" : 0,\n  \"txBytes\" : 67306,\n  \"udpFlows\" : 4,\n  \"udpReplies\" : 8\n}"
+    },
+    {
+      "name" : "round-1-stop",
+      "result" : "PASS：VPN disconnected"
+    },
+    {
+      "name" : "round-2-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-2-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-dns-tcp",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-session",
+      "result" : "PASS：同一 UDP 会话连续 5 次回显一致"
+    },
+    {
+      "name" : "round-2-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-tcp-32k",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-2-upstream-dns-tcp",
+      "result" : "PASS：TCP 32 KiB 回显和半关闭完整"
+    },
+    {
+      "name" : "round-2-ipv4-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-ipv4-scoped-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-ipv4-tcp-blocked",
+      "result" : "PASS：直接 IPv4 未能通信（需结合基线）"
+    },
+    {
+      "name" : "round-2-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 8,\n  \"events\" : [\n    \"started mtu=1500 fullTunnel=true resolver=100.82.58.195:1053\",\n    \"IPv6 rejected nextHeader=0 bytes=76 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"DNS BA304483 gateway.icloud.com type=28\",\n    \"DNS 76FDA809 gateway.icloud.com type=1\",\n    \"DNS F8507EF8 _dns.resolver.arpa type=64\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=3\",\n    \"DNS 76FDA809 reply bytes=36\",\n    \"DNS upstream 100.82.58.195:1053 type=28 rcode=3\",\n    \"DNS BA304483 AAAA fallback to A\",\n    \"DNS upstream 100.82.58.195:1053 type=64 rcode=3\",\n    \"DNS F8507EF8 reply bytes=36\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=3\",\n    \"DNS BA304483 reply bytes=36\",\n    \"TCP flow=1 DNS\",\n    \"TCP flow=1 closed txBytes=0 rxBytes=0\",\n    \"UDP flow=1 open fd64:64:64:1::2:60406>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=1 first-send bytes=44\",\n    \"UDP flow=1 first-receive bytes=44\",\n    \"UDP flow=2 open fd64:64:64:1::2:57361>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=2 first-send bytes=1452\",\n    \"UDP flow=2 first-receive bytes=1452\",\n    \"UDP flow=3 open fd64:64:64:1::2:63164>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=3 first-send bytes=46\",\n    \"UDP flow=3 first-receive bytes=46\",\n    \"IPv6 rejected nextHeader=0 bytes=76 src=fe80::38fd:f519:314e:3151 dst=ff02::16\",\n    \"UDP flow=4 open fd64:64:64:1::2:63443>fd64:64:64::6452:3ac3:18081 -> 100.82.58.195\",\n    \"UDP flow=4 first-send bytes=44\",\n    \"UDP flow=4 first-receive bytes=44\",\n    \"TCP flow=2 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=2 connected\",\n    \"TCP flow=2 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=2 closed txBytes=32768 rxBytes=32768\",\n    \"DNS 0787E0DE upstream.ipv6lab.test type=28\",\n    \"DNS D415D031 upstream.ipv6lab.test type=1\",\n    \"DNS upstream 100.82.58.195:1053 type=28 rcode=5\",\n    \"DNS 0787E0DE AAAA fallback to A\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS upstream truncated; retry TCP\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS upstream truncated; retry TCP\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS D415D031 reply bytes=107\",\n    \"DNS upstream 100.82.58.195:1053 type=1 rcode=0\",\n    \"DNS 0787E0DE synthesized AAAA\",\n    \"DNS 0787E0DE reply bytes=140\",\n    \"IPv4 captured and dropped\",\n    \"TCP flow=3 fd64:64:64::6452:3ac3:18080 -> 100.82.58.195\",\n    \"TCP flow=3 connected\",\n    \"TCP flow=3 transport state failed POSIXErrorCode(rawValue: 50): Network is down; draining receive\",\n    \"TCP flow=3 closed txBytes=32768 rxBytes=32768\"\n  ],\n  \"fullTunnel\" : true,\n  \"ipv4Dropped\" : 8,\n  \"mtu\" : 1500,\n  \"packets\" : 121,\n  \"rejected\" : 2,\n  \"running\" : true,\n  \"rxBytes\" : 67306,\n  \"tcpFlows\" : 0,\n  \"txBytes\" : 67306,\n  \"udpFlows\" : 4,\n  \"udpReplies\" : 8\n}"
+    },
+    {
+      "name" : "round-2-stop",
+      "result" : "PASS：VPN disconnected"
+    }
+  ],
+  "timestamp" : "2026-10-08T03:51:47Z",
+  "vpnStatus" : "VPN 未连接"
+}

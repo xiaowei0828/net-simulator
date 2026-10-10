@@ -1,0 +1,28 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'dev.ipv6lab'
+    compileSdk 34
+    ndkVersion '26.1.10909125'
+    defaultConfig {
+        applicationId 'dev.ipv6lab'
+        minSdk 29
+        targetSdk 34
+        versionCode 1
+        versionName '0.1.0'
+        ndk { abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86_64' }
+        externalNativeBuild { ndkBuild { targets 'hev-socks5-tunnel' } }
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    externalNativeBuild { ndkBuild { path file('../../third_party/hev-socks5-tunnel/Android.mk') } }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packaging { jniLibs { useLegacyPackaging = true } }
+}
+dependencies {
+    implementation project(':core')
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.22'
+}

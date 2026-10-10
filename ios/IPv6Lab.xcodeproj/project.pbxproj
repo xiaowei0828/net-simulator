@@ -1,0 +1,1023 @@
+// !$*UTF8*$!
+{
+"archiveVersion" = "1";
+"classes" = {
+};
+"objectVersion" = "56";
+"objects" = {
+"E87525FB4B87BC8E88E64E89" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Shared/DNSOverrides.swift";
+"sourceTree" = "<group>";
+};
+"50B2CF4A882A2B6D45937B90" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Shared/DNSUpstream.swift";
+"sourceTree" = "<group>";
+};
+"C8F6A0E372ADD5091DA820A0" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Shared/PacketCodec.swift";
+"sourceTree" = "<group>";
+};
+"0F07FFE182E2AF2E49037ACE" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Shared/PacketDiagnostics.swift";
+"sourceTree" = "<group>";
+};
+"BE7E1D0445B8638E9F94D853" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/IPv6LabApp.swift";
+"sourceTree" = "<group>";
+};
+"F7AFBFF4C545F4F488971BC5" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Tunnel/PacketTunnelProvider.swift";
+"sourceTree" = "<group>";
+};
+"617C60D962CF79CE691E5455" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/Debug/DeviceRegression.swift";
+"sourceTree" = "<group>";
+};
+"231CA32712C95DD96C8F9CC5" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/Diagnostics/IPv4SocketProbe.swift";
+"sourceTree" = "<group>";
+};
+"003048C3DF7AC4FAC8E5A28E" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/Diagnostics/VPNModel+Checks.swift";
+"sourceTree" = "<group>";
+};
+"F8AE05F3A8D70E88545380CB" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/LabView.swift";
+"sourceTree" = "<group>";
+};
+"5EE7E2FE06F050EF41FBF35B" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "App/VPNModel.swift";
+"sourceTree" = "<group>";
+};
+"B66F09B30CD47CC86D6EC619" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.swift";
+"path" = "Tunnel/DNS64Server.swift";
+"sourceTree" = "<group>";
+};
+"CFA6128F2F11ACDAB30186D6" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "Native/LabStack.c";
+"sourceTree" = "<group>";
+};
+"3B41655CEA934025071F478A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "Native/SystemDNS.c";
+"sourceTree" = "<group>";
+};
+"36254290215139F930AF8B78" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/altcp.c";
+"sourceTree" = "<group>";
+};
+"C1E890B34936753D7FA02DA6" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/altcp_alloc.c";
+"sourceTree" = "<group>";
+};
+"3BBD3B41ED775B15E8C625E5" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/altcp_tcp.c";
+"sourceTree" = "<group>";
+};
+"803A5ED2F5C68F3A2C946528" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/def.c";
+"sourceTree" = "<group>";
+};
+"2166C063A986BCC08FF3D8D7" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/dns.c";
+"sourceTree" = "<group>";
+};
+"168B7266DA5A22816FE26216" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/inet_chksum.c";
+"sourceTree" = "<group>";
+};
+"AFC997046C51C29A17401603" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/init.c";
+"sourceTree" = "<group>";
+};
+"474A37916677106B99AAAB6A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ip.c";
+"sourceTree" = "<group>";
+};
+"DF6A37EA70C7AF85C1F699AB" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/acd.c";
+"sourceTree" = "<group>";
+};
+"93C11A6137C2CF75FCCE4827" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/autoip.c";
+"sourceTree" = "<group>";
+};
+"8F5C16364880447A410A3237" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/dhcp.c";
+"sourceTree" = "<group>";
+};
+"D55140DB4FCE1FC46B68E847" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/etharp.c";
+"sourceTree" = "<group>";
+};
+"2357E9AB18DA7270EB96179C" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/icmp.c";
+"sourceTree" = "<group>";
+};
+"E59DF814875CE82DDEB05A6A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/igmp.c";
+"sourceTree" = "<group>";
+};
+"628C194346A3E8CC7422C147" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4.c";
+"sourceTree" = "<group>";
+};
+"68C7B079B3FE088853783550" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4_addr.c";
+"sourceTree" = "<group>";
+};
+"BC0D8A3038B67DE877DEB00F" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv4/ip4_frag.c";
+"sourceTree" = "<group>";
+};
+"97E9310622ACC28145E54CA7" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/dhcp6.c";
+"sourceTree" = "<group>";
+};
+"82E408AFAFBCCF0355D268D9" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ethip6.c";
+"sourceTree" = "<group>";
+};
+"CA51690737F58FDBFFB5D18A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/icmp6.c";
+"sourceTree" = "<group>";
+};
+"DB38BA7F8585609AA9931BE0" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/inet6.c";
+"sourceTree" = "<group>";
+};
+"BFC7BB511EAFDB213FD71B07" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ip6.c";
+"sourceTree" = "<group>";
+};
+"6FFA4ABB7FA5DE71EBC994EC" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ip6_addr.c";
+"sourceTree" = "<group>";
+};
+"4AB07A14550172757AC05FC5" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/ip6_frag.c";
+"sourceTree" = "<group>";
+};
+"CA5AA3A3E9ED5642691403C7" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/mld6.c";
+"sourceTree" = "<group>";
+};
+"1ED3D963991665CA200ECA1E" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/ipv6/nd6.c";
+"sourceTree" = "<group>";
+};
+"0E32D8B18E3A1E974F3CE68A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/mem.c";
+"sourceTree" = "<group>";
+};
+"3669F2DB7053C24AAE7D727E" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/memp.c";
+"sourceTree" = "<group>";
+};
+"2E5F77B986A43D699F45DA6A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/netif.c";
+"sourceTree" = "<group>";
+};
+"DCFBF1141FB01993B2026E6A" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/pbuf.c";
+"sourceTree" = "<group>";
+};
+"FD84C3742A0C79D0C9333583" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/raw.c";
+"sourceTree" = "<group>";
+};
+"9695E7F8D00482799BEEC498" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/stats.c";
+"sourceTree" = "<group>";
+};
+"A0C7E86EC136DAE3D4AD2B44" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/sys.c";
+"sourceTree" = "<group>";
+};
+"9AA42D018BB82BA788852F4B" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/tcp.c";
+"sourceTree" = "<group>";
+};
+"1E21C08271AA28943FD5F4FC" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/tcp_in.c";
+"sourceTree" = "<group>";
+};
+"9972EE234C99DC7474BE36FC" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/tcp_out.c";
+"sourceTree" = "<group>";
+};
+"B50B87206ED7D1A1ADFE545F" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/timeouts.c";
+"sourceTree" = "<group>";
+};
+"7FA5E9086193F202BC825545" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "sourcecode.c.c";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/src/core/udp.c";
+"sourceTree" = "<group>";
+};
+"FDB2FF05DC74F932DE6F4C3D" = {
+"isa" = "PBXFileReference";
+"lastKnownFileType" = "text";
+"path" = "../third_party/hev-socks5-tunnel/third-part/lwip/LICENSE";
+"sourceTree" = "<group>";
+};
+"81005A500FAB532993FF35A0" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.application";
+"path" = "IPv6Lab.app";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+"includeInIndex" = "0";
+};
+"E68702EEACB49BFF1D4BC615" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "BE7E1D0445B8638E9F94D853";
+};
+"DF8A73D0726702EB794741B5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "E87525FB4B87BC8E88E64E89";
+};
+"7746B6858EAED40D0861999D" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "50B2CF4A882A2B6D45937B90";
+};
+"B1A2E34F4EA64ABB916E80BD" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "C8F6A0E372ADD5091DA820A0";
+};
+"BCA75D2DC3E55656E6E23CD5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "0F07FFE182E2AF2E49037ACE";
+};
+"3F8F783FFFC5D514519712F6" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "617C60D962CF79CE691E5455";
+};
+"65EC26D849588A38A9A6925E" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "231CA32712C95DD96C8F9CC5";
+};
+"C03F2ABDCEA42E627FC5732D" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "003048C3DF7AC4FAC8E5A28E";
+};
+"6F808219694388636B265732" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "F8AE05F3A8D70E88545380CB";
+};
+"89E72F3958DFC272C18B0164" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "5EE7E2FE06F050EF41FBF35B";
+};
+"279304DBF56549B7817AD3E3" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+"E68702EEACB49BFF1D4BC615",
+"DF8A73D0726702EB794741B5",
+"7746B6858EAED40D0861999D",
+"B1A2E34F4EA64ABB916E80BD",
+"BCA75D2DC3E55656E6E23CD5",
+"3F8F783FFFC5D514519712F6",
+"65EC26D849588A38A9A6925E",
+"C03F2ABDCEA42E627FC5732D",
+"6F808219694388636B265732",
+"89E72F3958DFC272C18B0164",
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"E88C425164A662961A62F443" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"5973ACC3651128E9E7AB2035" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "FDB2FF05DC74F932DE6F4C3D";
+};
+"738D4F35535CEB367A4994AB" = {
+"isa" = "PBXResourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+"5973ACC3651128E9E7AB2035",
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"22DF0D2C6BA02244E58D7240" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+"PRODUCT_BUNDLE_IDENTIFIER" = "dev.ipv6lab.ios";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"INFOPLIST_FILE" = "App/Info.plist";
+"CODE_SIGN_ENTITLEMENTS" = "App/IPv6Lab.entitlements";
+"CODE_SIGN_STYLE" = "Automatic";
+"SWIFT_VERSION" = "5.0";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SDKROOT" = "iphoneos";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+"CURRENT_PROJECT_VERSION" = "2";
+"MARKETING_VERSION" = "0.2.0";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+"DEVELOPMENT_TEAM" = "ZL7YRX7GX9";
+};
+};
+"992A1EFACBAA296AEEC05B7F" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+"PRODUCT_BUNDLE_IDENTIFIER" = "dev.ipv6lab.ios";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"INFOPLIST_FILE" = "App/Info.plist";
+"CODE_SIGN_ENTITLEMENTS" = "App/IPv6Lab.entitlements";
+"CODE_SIGN_STYLE" = "Automatic";
+"SWIFT_VERSION" = "5.0";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SDKROOT" = "iphoneos";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+"CURRENT_PROJECT_VERSION" = "2";
+"MARKETING_VERSION" = "0.2.0";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"DEVELOPMENT_TEAM" = "ZL7YRX7GX9";
+};
+};
+"E649F5D519FACC8901725ACE" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = (
+"22DF0D2C6BA02244E58D7240",
+"992A1EFACBAA296AEEC05B7F",
+);
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Debug";
+};
+"DB90E3DD1AF1646E49927EA5" = {
+"isa" = "PBXNativeTarget";
+"name" = "IPv6Lab";
+"productName" = "IPv6Lab";
+"productReference" = "81005A500FAB532993FF35A0";
+"productType" = "com.apple.product-type.application";
+"buildConfigurationList" = "E649F5D519FACC8901725ACE";
+"buildPhases" = (
+"279304DBF56549B7817AD3E3",
+"E88C425164A662961A62F443",
+"738D4F35535CEB367A4994AB",
+"CFFF27C96089B93150F3553B",
+);
+"buildRules" = (
+);
+"dependencies" = (
+"DE58E2B17C19600779694943",
+);
+};
+"FF67DCBCEAF764A1818765B8" = {
+"isa" = "PBXFileReference";
+"explicitFileType" = "wrapper.app-extension";
+"path" = "PacketTunnel.appex";
+"sourceTree" = "BUILT_PRODUCTS_DIR";
+"includeInIndex" = "0";
+};
+"B8693726E6484A6EDEA6C6F3" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "F7AFBFF4C545F4F488971BC5";
+};
+"A3C70582ECBA3BF9931B0AE4" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "E87525FB4B87BC8E88E64E89";
+};
+"17DBAB80A00AF5C497CEAF65" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "50B2CF4A882A2B6D45937B90";
+};
+"0030A8999E2894D8087B9251" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "C8F6A0E372ADD5091DA820A0";
+};
+"E26C177210D64A7659C849F1" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "0F07FFE182E2AF2E49037ACE";
+};
+"1581C9800747330A2ADD1622" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "B66F09B30CD47CC86D6EC619";
+};
+"35A8C24C290AD751E39F8CE5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "CFA6128F2F11ACDAB30186D6";
+};
+"FE13675AF99FAB5FD2877533" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3B41655CEA934025071F478A";
+};
+"33F4FBA73C77588D816E28CA" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "36254290215139F930AF8B78";
+};
+"2984E3BEA404157192ED9D95" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "C1E890B34936753D7FA02DA6";
+};
+"3F92CC9BB6A9EAF6E3D5203C" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3BBD3B41ED775B15E8C625E5";
+};
+"24B7A527F53612891E57F90E" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "803A5ED2F5C68F3A2C946528";
+};
+"AB2FCA2D51F14E854CC3AD50" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "2166C063A986BCC08FF3D8D7";
+};
+"9D7A8B3D65C0698E25D723A9" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "168B7266DA5A22816FE26216";
+};
+"AA412EF80E24618F988125A2" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "AFC997046C51C29A17401603";
+};
+"C6EE81E0EFDF17D9A4D8319E" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "474A37916677106B99AAAB6A";
+};
+"4DB3DDC929C5D04517572A55" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "DF6A37EA70C7AF85C1F699AB";
+};
+"9AC5CAE4E99815BE01F4F5E9" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "93C11A6137C2CF75FCCE4827";
+};
+"B3A3565B41CE9B7A343C3FCB" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "8F5C16364880447A410A3237";
+};
+"8F4CDFA9288216CABA96C05E" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "D55140DB4FCE1FC46B68E847";
+};
+"F65EE83C4065E44D54461F3E" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "2357E9AB18DA7270EB96179C";
+};
+"8F1E945A13837B7EE25E37C4" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "E59DF814875CE82DDEB05A6A";
+};
+"76732D662EA27891FD1398B6" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "628C194346A3E8CC7422C147";
+};
+"25FDF5DB5D6581C2ECA87ACC" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "68C7B079B3FE088853783550";
+};
+"BB30B638D0C2FF0185D71472" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "BC0D8A3038B67DE877DEB00F";
+};
+"5726508529E8F0C776B24263" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "97E9310622ACC28145E54CA7";
+};
+"E77A7496D3129BBC9B097435" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "82E408AFAFBCCF0355D268D9";
+};
+"62B4FFF9D8EEFA001FEA31CE" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "CA51690737F58FDBFFB5D18A";
+};
+"5E99E46FB8E2493EA04A7743" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "DB38BA7F8585609AA9931BE0";
+};
+"D9CD96A93EFF44823504A823" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "BFC7BB511EAFDB213FD71B07";
+};
+"6CB0902E069686AE4816F198" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "6FFA4ABB7FA5DE71EBC994EC";
+};
+"432F111713B78D5BD7BDA873" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "4AB07A14550172757AC05FC5";
+};
+"BA4BFBC352B66ECE0F4B6378" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "CA5AA3A3E9ED5642691403C7";
+};
+"7B03C4501950FB396F1B81DA" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "1ED3D963991665CA200ECA1E";
+};
+"2941FA6C7134271D34A02548" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "0E32D8B18E3A1E974F3CE68A";
+};
+"108C4664426CC2A0C8605349" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "3669F2DB7053C24AAE7D727E";
+};
+"D5417F8D855F3B1008ED5A29" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "2E5F77B986A43D699F45DA6A";
+};
+"BD7A649EA7FA35C5D018A5E5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "DCFBF1141FB01993B2026E6A";
+};
+"B16D19F3DD6CF4978CF9E7F0" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "FD84C3742A0C79D0C9333583";
+};
+"7459E8C494362A1F196E558B" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "9695E7F8D00482799BEEC498";
+};
+"C1F89BC8029BF71E67C0BAF5" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "A0C7E86EC136DAE3D4AD2B44";
+};
+"EE95BE584311A6F27C43231A" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "9AA42D018BB82BA788852F4B";
+};
+"FAB0444959E97CF0E46CE969" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "1E21C08271AA28943FD5F4FC";
+};
+"3941C7A223FEC19E9CBAEB03" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "9972EE234C99DC7474BE36FC";
+};
+"7C08B7E1FC42D0A2734A9674" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "B50B87206ED7D1A1ADFE545F";
+};
+"1301DB3D4A5575AE42399ECE" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "7FA5E9086193F202BC825545";
+};
+"163D6DFA93BDC220113EF329" = {
+"isa" = "PBXSourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+"B8693726E6484A6EDEA6C6F3",
+"A3C70582ECBA3BF9931B0AE4",
+"17DBAB80A00AF5C497CEAF65",
+"0030A8999E2894D8087B9251",
+"E26C177210D64A7659C849F1",
+"1581C9800747330A2ADD1622",
+"35A8C24C290AD751E39F8CE5",
+"FE13675AF99FAB5FD2877533",
+"33F4FBA73C77588D816E28CA",
+"2984E3BEA404157192ED9D95",
+"3F92CC9BB6A9EAF6E3D5203C",
+"24B7A527F53612891E57F90E",
+"AB2FCA2D51F14E854CC3AD50",
+"9D7A8B3D65C0698E25D723A9",
+"AA412EF80E24618F988125A2",
+"C6EE81E0EFDF17D9A4D8319E",
+"4DB3DDC929C5D04517572A55",
+"9AC5CAE4E99815BE01F4F5E9",
+"B3A3565B41CE9B7A343C3FCB",
+"8F4CDFA9288216CABA96C05E",
+"F65EE83C4065E44D54461F3E",
+"8F1E945A13837B7EE25E37C4",
+"76732D662EA27891FD1398B6",
+"25FDF5DB5D6581C2ECA87ACC",
+"BB30B638D0C2FF0185D71472",
+"5726508529E8F0C776B24263",
+"E77A7496D3129BBC9B097435",
+"62B4FFF9D8EEFA001FEA31CE",
+"5E99E46FB8E2493EA04A7743",
+"D9CD96A93EFF44823504A823",
+"6CB0902E069686AE4816F198",
+"432F111713B78D5BD7BDA873",
+"BA4BFBC352B66ECE0F4B6378",
+"7B03C4501950FB396F1B81DA",
+"2941FA6C7134271D34A02548",
+"108C4664426CC2A0C8605349",
+"D5417F8D855F3B1008ED5A29",
+"BD7A649EA7FA35C5D018A5E5",
+"B16D19F3DD6CF4978CF9E7F0",
+"7459E8C494362A1F196E558B",
+"C1F89BC8029BF71E67C0BAF5",
+"EE95BE584311A6F27C43231A",
+"FAB0444959E97CF0E46CE969",
+"3941C7A223FEC19E9CBAEB03",
+"7C08B7E1FC42D0A2734A9674",
+"1301DB3D4A5575AE42399ECE",
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"FDEFFDBAE99E4CEA3D62BEC9" = {
+"isa" = "PBXFrameworksBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"9374E2675E5B8B5FF1E86FB8" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "FDB2FF05DC74F932DE6F4C3D";
+};
+"378C9BB6AD0888D21F3A6B60" = {
+"isa" = "PBXResourcesBuildPhase";
+"buildActionMask" = "2147483647";
+"files" = (
+"9374E2675E5B8B5FF1E86FB8",
+);
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"C4EFC68E607AA752B6FAB00F" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+"PRODUCT_BUNDLE_IDENTIFIER" = "dev.ipv6lab.ios.PacketTunnel";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"INFOPLIST_FILE" = "Tunnel/Info.plist";
+"CODE_SIGN_ENTITLEMENTS" = "Tunnel/IPv6Lab.entitlements";
+"CODE_SIGN_STYLE" = "Automatic";
+"SWIFT_VERSION" = "5.0";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SDKROOT" = "iphoneos";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-Onone";
+"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+"CURRENT_PROJECT_VERSION" = "2";
+"MARKETING_VERSION" = "0.2.0";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"SWIFT_ACTIVE_COMPILATION_CONDITIONS" = "$(inherited) DEBUG";
+"APPLICATION_EXTENSION_API_ONLY" = "YES";
+"SKIP_INSTALL" = "YES";
+"SWIFT_OBJC_BRIDGING_HEADER" = "Native/LabStack.h";
+"OTHER_CFLAGS" = (
+"$(inherited)",
+"-fno-modules",
+);
+"OTHER_LDFLAGS" = (
+"$(inherited)",
+"-lresolv",
+);
+"HEADER_SEARCH_PATHS" = (
+"$(SRCROOT)/Native/include",
+"$(SRCROOT)/../third_party/hev-socks5-tunnel/third-part/lwip/src/include",
+);
+};
+};
+"E7294F5477074E82068DD772" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+"PRODUCT_BUNDLE_IDENTIFIER" = "dev.ipv6lab.ios.PacketTunnel";
+"PRODUCT_NAME" = "$(TARGET_NAME)";
+"INFOPLIST_FILE" = "Tunnel/Info.plist";
+"CODE_SIGN_ENTITLEMENTS" = "Tunnel/IPv6Lab.entitlements";
+"CODE_SIGN_STYLE" = "Automatic";
+"SWIFT_VERSION" = "5.0";
+"IPHONEOS_DEPLOYMENT_TARGET" = "16.4";
+"TARGETED_DEVICE_FAMILY" = "1,2";
+"SDKROOT" = "iphoneos";
+"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
+"SUPPORTS_MACCATALYST" = "NO";
+"GENERATE_INFOPLIST_FILE" = "NO";
+"SWIFT_OPTIMIZATION_LEVEL" = "-O";
+"LD_RUNPATH_SEARCH_PATHS" = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+"CURRENT_PROJECT_VERSION" = "2";
+"MARKETING_VERSION" = "0.2.0";
+"ENABLE_USER_SCRIPT_SANDBOXING" = "YES";
+"APPLICATION_EXTENSION_API_ONLY" = "YES";
+"SKIP_INSTALL" = "YES";
+"SWIFT_OBJC_BRIDGING_HEADER" = "Native/LabStack.h";
+"OTHER_CFLAGS" = (
+"$(inherited)",
+"-fno-modules",
+);
+"OTHER_LDFLAGS" = (
+"$(inherited)",
+"-lresolv",
+);
+"HEADER_SEARCH_PATHS" = (
+"$(SRCROOT)/Native/include",
+"$(SRCROOT)/../third_party/hev-socks5-tunnel/third-part/lwip/src/include",
+);
+};
+};
+"C8018B08C49F3C2D47E54DE6" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = (
+"C4EFC68E607AA752B6FAB00F",
+"E7294F5477074E82068DD772",
+);
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Debug";
+};
+"D27EFC543CB8EA589BA3793D" = {
+"isa" = "PBXNativeTarget";
+"name" = "PacketTunnel";
+"productName" = "PacketTunnel";
+"productReference" = "FF67DCBCEAF764A1818765B8";
+"productType" = "com.apple.product-type.app-extension";
+"buildConfigurationList" = "C8018B08C49F3C2D47E54DE6";
+"buildPhases" = (
+"163D6DFA93BDC220113EF329",
+"FDEFFDBAE99E4CEA3D62BEC9",
+"378C9BB6AD0888D21F3A6B60",
+);
+"buildRules" = (
+);
+"dependencies" = (
+);
+};
+"D799BAE6088A90139B415FCC" = {
+"isa" = "PBXContainerItemProxy";
+"containerPortal" = "98F54143AB4E86B28C3AFEE0";
+"proxyType" = "1";
+"remoteGlobalIDString" = "D27EFC543CB8EA589BA3793D";
+"remoteInfo" = "PacketTunnel";
+};
+"DE58E2B17C19600779694943" = {
+"isa" = "PBXTargetDependency";
+"target" = "D27EFC543CB8EA589BA3793D";
+"targetProxy" = "D799BAE6088A90139B415FCC";
+};
+"265BC4FD28C528304F1AC67C" = {
+"isa" = "PBXBuildFile";
+"fileRef" = "FF67DCBCEAF764A1818765B8";
+"settings" = {
+"ATTRIBUTES" = (
+"RemoveHeadersOnCopy",
+);
+};
+};
+"CFFF27C96089B93150F3553B" = {
+"isa" = "PBXCopyFilesBuildPhase";
+"buildActionMask" = "2147483647";
+"dstPath" = "";
+"dstSubfolderSpec" = "13";
+"files" = (
+"265BC4FD28C528304F1AC67C",
+);
+"name" = "Embed App Extensions";
+"runOnlyForDeploymentPostprocessing" = "0";
+};
+"FBDC4F23F93125BBEEAE800C" = {
+"isa" = "PBXGroup";
+"children" = (
+"81005A500FAB532993FF35A0",
+"FF67DCBCEAF764A1818765B8",
+);
+"name" = "Products";
+"sourceTree" = "<group>";
+};
+"B28B7AF69320201D1CF206EB" = {
+"isa" = "PBXGroup";
+"children" = (
+"BE7E1D0445B8638E9F94D853",
+"F7AFBFF4C545F4F488971BC5",
+"FBDC4F23F93125BBEEAE800C",
+"FDB2FF05DC74F932DE6F4C3D",
+"E87525FB4B87BC8E88E64E89",
+"50B2CF4A882A2B6D45937B90",
+"C8F6A0E372ADD5091DA820A0",
+"0F07FFE182E2AF2E49037ACE",
+"617C60D962CF79CE691E5455",
+"231CA32712C95DD96C8F9CC5",
+"003048C3DF7AC4FAC8E5A28E",
+"F8AE05F3A8D70E88545380CB",
+"5EE7E2FE06F050EF41FBF35B",
+"B66F09B30CD47CC86D6EC619",
+"CFA6128F2F11ACDAB30186D6",
+"3B41655CEA934025071F478A",
+"36254290215139F930AF8B78",
+"C1E890B34936753D7FA02DA6",
+"3BBD3B41ED775B15E8C625E5",
+"803A5ED2F5C68F3A2C946528",
+"2166C063A986BCC08FF3D8D7",
+"168B7266DA5A22816FE26216",
+"AFC997046C51C29A17401603",
+"474A37916677106B99AAAB6A",
+"DF6A37EA70C7AF85C1F699AB",
+"93C11A6137C2CF75FCCE4827",
+"8F5C16364880447A410A3237",
+"D55140DB4FCE1FC46B68E847",
+"2357E9AB18DA7270EB96179C",
+"E59DF814875CE82DDEB05A6A",
+"628C194346A3E8CC7422C147",
+"68C7B079B3FE088853783550",
+"BC0D8A3038B67DE877DEB00F",
+"97E9310622ACC28145E54CA7",
+"82E408AFAFBCCF0355D268D9",
+"CA51690737F58FDBFFB5D18A",
+"DB38BA7F8585609AA9931BE0",
+"BFC7BB511EAFDB213FD71B07",
+"6FFA4ABB7FA5DE71EBC994EC",
+"4AB07A14550172757AC05FC5",
+"CA5AA3A3E9ED5642691403C7",
+"1ED3D963991665CA200ECA1E",
+"0E32D8B18E3A1E974F3CE68A",
+"3669F2DB7053C24AAE7D727E",
+"2E5F77B986A43D699F45DA6A",
+"DCFBF1141FB01993B2026E6A",
+"FD84C3742A0C79D0C9333583",
+"9695E7F8D00482799BEEC498",
+"A0C7E86EC136DAE3D4AD2B44",
+"9AA42D018BB82BA788852F4B",
+"1E21C08271AA28943FD5F4FC",
+"9972EE234C99DC7474BE36FC",
+"B50B87206ED7D1A1ADFE545F",
+"7FA5E9086193F202BC825545",
+);
+"sourceTree" = "<group>";
+};
+"89E1FD6268CC0F221A2BE178" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Debug";
+"buildSettings" = {
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"DEBUG_INFORMATION_FORMAT" = "dwarf";
+"ENABLE_TESTABILITY" = "YES";
+};
+};
+"E6DE6C99132752C914FEF632" = {
+"isa" = "XCBuildConfiguration";
+"name" = "Release";
+"buildSettings" = {
+"CLANG_ENABLE_MODULES" = "YES";
+"CLANG_ENABLE_OBJC_ARC" = "YES";
+"DEBUG_INFORMATION_FORMAT" = "dwarf";
+"ENABLE_TESTABILITY" = "NO";
+};
+};
+"862894B703A6DEDF96A9DD6C" = {
+"isa" = "XCConfigurationList";
+"buildConfigurations" = (
+"89E1FD6268CC0F221A2BE178",
+"E6DE6C99132752C914FEF632",
+);
+"defaultConfigurationIsVisible" = "0";
+"defaultConfigurationName" = "Debug";
+};
+"98F54143AB4E86B28C3AFEE0" = {
+"isa" = "PBXProject";
+"attributes" = {
+"LastUpgradeCheck" = "1610";
+"TargetAttributes" = {
+"DB90E3DD1AF1646E49927EA5" = {
+"CreatedOnToolsVersion" = "16.1";
+"SystemCapabilities" = {
+"com.apple.NetworkExtensions.iOS" = {
+"enabled" = "1";
+};
+};
+};
+"D27EFC543CB8EA589BA3793D" = {
+"CreatedOnToolsVersion" = "16.1";
+"SystemCapabilities" = {
+"com.apple.NetworkExtensions.iOS" = {
+"enabled" = "1";
+};
+};
+};
+};
+};
+"buildConfigurationList" = "862894B703A6DEDF96A9DD6C";
+"compatibilityVersion" = "Xcode 14.0";
+"developmentRegion" = "en";
+"knownRegions" = (
+"en",
+"Base",
+);
+"mainGroup" = "B28B7AF69320201D1CF206EB";
+"productRefGroup" = "FBDC4F23F93125BBEEAE800C";
+"projectDirPath" = "";
+"projectRoot" = "";
+"targets" = (
+"DB90E3DD1AF1646E49927EA5",
+"D27EFC543CB8EA589BA3793D",
+);
+};
+};
+"rootObject" = "98F54143AB4E86B28C3AFEE0";
+}

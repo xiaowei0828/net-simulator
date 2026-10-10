@@ -1,0 +1,66 @@
+{
+  "echoIPv4" : "100.82.58.195",
+  "finished" : true,
+  "mtu" : 1500,
+  "runID" : "5BB70C05-4B40-41B8-A8A3-834551F919E4",
+  "steps" : [
+    {
+      "name" : "round-1-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-1-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-1-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-1-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 4,\n  \"events\" : [\n    \"started: scoped probe routes only; IPv4 is NOT blocked; echo=100.82.58.195\",\n    \"local DNS fixture reply count=1 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=44\",\n    \"UDP reply bytes=44 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=1452\",\n    \"UDP reply bytes=1452 accepted=true\",\n    \"local DNS fixture reply count=2 accepted=true\",\n    \"local DNS fixture reply count=3 accepted=true\",\n    \"local DNS fixture reply count=4 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=44\",\n    \"UDP reply bytes=44 accepted=true\"\n  ],\n  \"packets\" : 9,\n  \"running\" : true,\n  \"udpReplies\" : 3\n}"
+    },
+    {
+      "name" : "round-1-stop",
+      "result" : "PASS：VPN disconnected"
+    },
+    {
+      "name" : "round-2-connect",
+      "result" : "PASS：Packet Tunnel connected"
+    },
+    {
+      "name" : "round-2-dns-fixture",
+      "result" : "PASS：TUN 收到 DNS 查询，返回匹配目标的合成 AAAA"
+    },
+    {
+      "name" : "round-2-udp-44",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-udp-1452",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-system-dns-udp",
+      "result" : "PASS：合成 IPv6 → 本地 UDP NAT64 → IPv4 回显 → IPv6 返回，数据一致"
+    },
+    {
+      "name" : "round-2-diagnostics",
+      "result" : "{\n  \"dnsReplies\" : 4,\n  \"events\" : [\n    \"started: scoped probe routes only; IPv4 is NOT blocked; echo=100.82.58.195\",\n    \"local DNS fixture reply count=1 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=44\",\n    \"UDP reply bytes=44 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=1452\",\n    \"UDP reply bytes=1452 accepted=true\",\n    \"local DNS fixture reply count=2 accepted=true\",\n    \"local DNS fixture reply count=3 accepted=true\",\n    \"local DNS fixture reply count=4 accepted=true\",\n    \"UDP NAT64 -> 100.82.58.195:18081 bytes=44\",\n    \"UDP reply bytes=44 accepted=true\"\n  ],\n  \"packets\" : 9,\n  \"running\" : true,\n  \"udpReplies\" : 3\n}"
+    },
+    {
+      "name" : "round-2-stop",
+      "result" : "PASS：VPN disconnected"
+    }
+  ],
+  "timestamp" : "2026-10-08T03:19:24Z",
+  "vpnStatus" : "探针未连接"
+}
